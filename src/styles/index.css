@@ -3,5 +3,12 @@
 @tailwind utilities;
 
 .active{
-    @apply text-blue-500
+    @apply text-blue-500;
+    @apply  border-blue-500 m-3 transition duration-300 ease-in-out
 }
+.navbar-top{
+  transform: translateY(-15px);
+}
+
+
+/* width */

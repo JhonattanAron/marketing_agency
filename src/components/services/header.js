@@ -10,43 +10,15 @@ function Header(props) {
           <div>
             <div>
               <h1 className="text-4x1 w font-bold tracking-tight sm:text-center sm:text-6xl">
-                Finds{" "}
-                <div
-                  className="inline-flex"
-                  style={{ color: "#2a77d6", fontWeight: "bold" }}
-                >
-                  <Typewriter
-                    words={[
-                      "Web Services",
-                      "Mobile Services",
-                      "Desing Services",
-                      "BlockChain Services",
-                      "Frontend Services",
-                      "Backend Services",
-                      "Artificial intelligence",
-                    ]}
-                    loop={5}
-                    cursor
-                    cursorStyle="_"
-                    typeSpeed={70}
-                    delaySpeed={1000}
-                    deleteSpeed={50}
-                  />
-                </div>
+                AdaptLeap Software Services
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600 sm:text-center">
                 <ul>
                   <li className="inline-flex border-b-2 border-transparent hover:border-blue-900 m-3 transition duration-300 ease-in-out">
-                    <Link to={"/servicios"}>Web Services</Link>
-                  </li>
-                  <li className="inline-flex border-b-2 border-transparent hover:border-blue-900 m-3 transition duration-300 ease-in-out">
-                    <Link to={"/servicios"}>Mobil Services</Link>
-                  </li>
-                  <li className="inline-flex border-b-2 border-transparent hover:border-blue-900 m-3 transition duration-300 ease-in-out">
-                    <Link to={"/servicios"}>BlockChain Services</Link>
-                  </li>
-                  <li className="inline-flex border-b-2 border-transparent hover:border-blue-900 m-3 transition duration-300 ease-in-out">
-                    <Link to={"/servicios"}>Artificial intelligence</Link>
+                    At AdaptWeb, we understand that an online presence is
+                    essential for business success in the digital age.
+                    Therefore, we offer a wide range of web services designed to
+                    enhance your company in the digital world.
                   </li>
                 </ul>
               </p>
