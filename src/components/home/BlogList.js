@@ -1,6 +1,6 @@
 const posts = [
   {
-    title: "Boost your conversion rate",
+    title: "",
     href: "#",
     category: {
       name: "Article",
@@ -67,7 +67,7 @@ export default function BlogList() {
       <div className="relative mx-auto max-w-lg divide-y-2 divide-gray-200 lg:max-w-7xl">
         <div>
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Recent publications
+            Clientes que confian en Nosotros
           </h2>
           <p className="mt-3 text-xl text-gray-500 sm:mt-4">
             Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat
