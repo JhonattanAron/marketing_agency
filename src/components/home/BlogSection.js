@@ -76,7 +76,7 @@ function BlogSectionHome() {
           {posts.map((post) => (
             <div
               key={post.title}
-              className="flex flex-col overflow-hidden rounded-lg shadow-lg"
+              className="flex flex-col overflow-hidden rounded-lg shadow-xl"
             >
               <div className="flex-shrink-0">
                 <img

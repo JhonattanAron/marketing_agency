@@ -1,18 +1,18 @@
 const posts = [
   {
-    title: "",
+    title: "QuitoShops",
     href: "#",
     category: {
-      name: "Article",
+      name: "Review",
       href: "#",
       color: "bg-indigo-100 text-indigo-800",
     },
     description:
-      "Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus arcu.",
+      "Adapleat has been essential to the success of my business. Their expert team not only completely redesigned our website, but also improved the user experience, resulting in a significant increase in our customer engagement. Thank you Adapleat for your excellent service and professionalism! I highly recommend their services.",
     date: "Mar 16, 2020",
-    datetime: "2020-03-16",
+    datetime: "2023-10-16",
     author: {
-      name: "Paul York",
+      name: "Aron Cachago",
       href: "#",
       imageUrl:
         "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
@@ -20,11 +20,11 @@ const posts = [
     readingTime: "6 min",
   },
   {
-    title: "How to use search engine optimization to drive sales",
+    title: "Nat Spa",
     href: "#",
-    category: { name: "Video", href: "#", color: "bg-pink-100 text-pink-800" },
+    category: { name: "Review", href: "#", color: "bg-pink-100 text-pink-800" },
     description:
-      "Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus arcu.",
+      "I am extremely satisfied with Adapleat's advice and work. They transformed our old website into a modern and attractive platform. Additionally, their personalized attention and quick response to our needs were impressive. Without a doubt, Adapleat is the ideal partner for any company looking to improve its online presence!",
     date: "Mar 10, 2020",
     datetime: "2020-03-10",
     author: {
@@ -36,19 +36,19 @@ const posts = [
     readingTime: "4 min",
   },
   {
-    title: "Improve your customer experience",
+    title: "Joy Technologys",
     href: "#",
     category: {
-      name: "Case Study",
+      name: "Review",
       href: "#",
       color: "bg-green-100 text-green-800",
     },
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab iure iusto fugiat commodi sequi.",
+      "Adapleat exceeded my expectations. Their team not only fully understood our vision, but they also provided us with creative solutions to improve the functionality and design of our website. The collaboration was seamless, and the end result was exactly what we needed. Definitely, Adapleat is the perfect partner for web development.",
     date: "Feb 12, 2020",
     datetime: "2020-02-12",
     author: {
-      name: "Easer Collins",
+      name: "Rafael Collins",
       href: "#",
       imageUrl:
         "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
@@ -67,7 +67,7 @@ export default function BlogList() {
       <div className="relative mx-auto max-w-lg divide-y-2 divide-gray-200 lg:max-w-7xl">
         <div>
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Clientes que confian en Nosotros
+            Our Clients Currently
           </h2>
           <p className="mt-3 text-xl text-gray-500 sm:mt-4">
             Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat
