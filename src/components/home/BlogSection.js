@@ -1,57 +1,57 @@
 function BlogSectionHome() {
   const posts = [
     {
-      title: "Boost your conversion rate",
+      title: "The Gourmet Traveler's Inn",
       href: "#",
-      category: { name: "Article", href: "#" },
+      category: { name: "review", href: "#" },
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.",
-      date: "Mar 16, 2020",
-      datetime: "2020-03-16",
+        "Thanks to the collaboration with this agency, my start-up underwent an amazing transformation. His strategic approach and technical knowledge guided us from conception to success. Their team is not only professional, but also becomes a passionate ally in the entrepreneurial journey. I would recommend this agency without hesitation to any start-up looking for a real boost towards success!",
+      date: "Mar 16, 2023",
+      datetime: "2023-03-16",
       imageUrl:
-        "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80",
+        "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       readingTime: "6 min",
       author: {
-        name: "Roel Aufderehar",
+        name: "Marta Aufderehar",
         href: "#",
         imageUrl:
-          "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+          "https://images.unsplash.com/photo-1667132970685-a2109a3ed00d?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       },
     },
     {
-      title: "How to use search engine optimization to drive sales",
+      title: "Urban Elegance",
       href: "#",
-      category: { name: "Video", href: "#" },
+      category: { name: "review", href: "#" },
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores porro quaerat doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi., tempore temporibus quo laudantium.",
-      date: "Mar 10, 2020",
-      datetime: "2020-03-10",
+        "Collaborating with this agency was the catalyst my start-up needed. His strategic approach and outstanding technical skills not only optimized our product but also revolutionized our business strategy. Thanks to their commitment and unique vision, our project went from a promising idea to a thriving reality. Their team not only provided solutions but also became an invaluable partner in our journey to business success. I would recommend this agency to any entrepreneur looking not only for results, but for a genuine and effective strategic partnership!",
+      date: "Mar 10, 2023",
+      datetime: "2022-03-10",
       imageUrl:
-        "https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80",
+        "https://images.unsplash.com/photo-1595665593673-bf1ad72905c0?q=80&w=1028&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       readingTime: "4 min",
       author: {
-        name: "Brenna Goyette",
+        name: "Samuel Goyette",
         href: "#",
         imageUrl:
-          "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+          "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       },
     },
     {
-      title: "Improve your customer experience",
+      title: "TecnoBoutique",
       href: "#",
-      category: { name: "Case Study", href: "#" },
+      category: { name: "review", href: "#" },
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum rerum voluptatem quo recusandae magni placeat saepe molestiae, sed excepturi cumque corporis perferendis hic.",
-      date: "Feb 12, 2020",
-      datetime: "2020-02-12",
+        "My experience with this agency was nothing short of transformative for my custom phone case start-up. From the beginning, your team demonstrated a deep understanding of our needs and exceptional creativity. They not only provided us with solid technical solutions but also guided us strategically in creating a unique brand. Thanks to their guidance and experience, our start-up went from being an isolated idea to a successful product line appreciated by our customers. His customer-centric approach and dedication to detail not only drove our business, but also made the entrepreneurial journey exciting and rewarding. I would without hesitation recommend this agency to any entrepreneur looking for a real boost to their vision!",
+      date: "Feb 12, 2023",
+      datetime: "2023-02-12",
       imageUrl:
-        "https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80",
+        "https://images.unsplash.com/photo-1542219550-76864b1bc385?q=80&w=1025&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       readingTime: "11 min",
       author: {
-        name: "Daniela Metz",
+        name: "Efrain Metz",
         href: "#",
         imageUrl:
-          "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+          "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       },
     },
   ];
@@ -63,11 +63,13 @@ function BlogSectionHome() {
       <div className="relative mx-auto max-w-7xl">
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            From the blog
+            Power your Start-up: We Transform Ideas into Success
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa
-            libero labore natus atque, ducimus sed.
+            We are your strategic partner for business growth. From conception
+            to success, we promote your start-up with experience and unique
+            vision. Ready to take your idea to the next level? Join us and make
+            your start-up prosper
           </p>
         </div>
         <div className="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">

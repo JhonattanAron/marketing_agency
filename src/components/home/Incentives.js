@@ -1,24 +1,24 @@
 const incentives = [
   {
-    name: "Free shipping",
+    name: "Free Interactions",
     imageSrc:
       "https://tailwindui.com/img/ecommerce/icons/icon-shipping-simple.svg",
     description:
-      "It's not actually free we just price it into the products. Someone's paying for it, and it's not us.",
+      "we simply integrate them into the development cost. Someone is financing them, and it is not the client.",
   },
   {
-    name: "10-year warranty",
+    name: "10-phase guarantee",
     imageSrc:
       "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
     description:
-      "If it breaks in the first 10 years we'll replace it. After that you're on your own though.",
+      "If something breaks during the first 10 phases of development, we will fix it. After that point, it will depend on your maintenance.",
   },
   {
-    name: "Exchanges",
+    name: "Requirements exchange",
     imageSrc:
       "https://tailwindui.com/img/ecommerce/icons/icon-exchange-simple.svg",
     description:
-      "If you don't like it, trade it to one of your friends for something of theirs. Don't send it here though.",
+      "If you are not satisfied with any requirement, as experts we will be ready for any changes",
   },
 ];
 
@@ -29,14 +29,15 @@ export default function IncentivesHome() {
         <div className="mx-auto max-w-2xl px-4 lg:max-w-none">
           <div className="max-w-3xl">
             <h2 className="text-4xl font-bold tracking-tight text-gray-900">
-              We built our business on customer service
+              Innovate with Us: Your Ideal Partner in Software Development
             </h2>
             <p className="mt-4 text-gray-500">
-              At the beginning at least, but then we realized we could make a
-              lot more money if we kinda stopped caring about that. Our new
-              strategy is to write a bunch of things that look really good in
-              the headlines, then clarify in the small print but hope people
-              don't actually read it.
+              Transform your vision into reality with our leading software
+              development agency. From concept to implementation, we offer
+              customized solutions that drive innovation and enhance your
+              success. Discover how we can take your project to the next level,
+              combining technical expertise with a customer-centric approach.
+              Turn your ideas into world-class software with us!
             </p>
           </div>
           <div className="mt-16 grid grid-cols-1 gap-y-10 gap-x-8 lg:grid-cols-3">

@@ -2,44 +2,39 @@ import { CheckIcon } from "@heroicons/react/24/outline";
 
 const features = [
   {
-    name: "Invite team members",
+    name: "Web Development Services",
     description:
-      "You can manage phone, email and chat conversations all from a single mailbox.",
+      "Elevate your online presence with our comprehensive web development solutions. From inviting team collaboration to seamless list views, we streamline your digital experience.",
   },
   {
-    name: "List view",
+    name: "Responsive Designs",
     description:
-      "You can manage phone, email and chat conversations all from a single mailbox.",
+      "Crafting keyboard shortcuts for success, we ensure your website is not just visually appealing but also user-friendly, enhancing navigation and engagement.",
   },
   {
-    name: "Keyboard shortcuts",
+    name: "Optimized Calendars",
     description:
-      "You can manage phone, email and chat conversations all from a single mailbox.",
+      "Syncing seamlessly with your business goals, our web development services include optimized calendars for efficient scheduling and management of essential events.",
   },
   {
-    name: "Calendars",
+    name: "Proactive Notifications",
     description:
-      "You can manage phone, email and chat conversations all from a single mailbox.",
+      "Stay informed and ahead with our proactive notification systems. We keep you in the loop, ensuring you never miss a critical update or opportunity.",
   },
   {
-    name: "Notifications",
+    name: "Interactive Boards",
     description:
-      "Find what you need with advanced filters, bulk actions, and quick views.",
+      "Experience project management like never before with interactive boards that facilitate collaboration, streamline workflows, and enhance productivity.",
   },
   {
-    name: "Boards",
+    name: "Comprehensive Reporting",
     description:
-      "Find what you need with advanced filters, bulk actions, and quick views.",
+      "Gain valuable insights into your web performance. Our reporting tools provide in-depth analytics, allowing you to make informed decisions for continued growth.",
   },
   {
-    name: "Reporting",
+    name: "Mobile-Friendly Solutions",
     description:
-      "Find what you need with advanced filters, bulk actions, and quick views.",
-  },
-  {
-    name: "Mobile app",
-    description:
-      "Find what you need with advanced filters, bulk actions, and quick views.",
+      "Your website on the go! Our mobile app development ensures your business remains accessible and user-friendly across various devices, providing a seamless experience.",
   },
 ];
 
@@ -55,8 +50,11 @@ export default function Features() {
             All-in-one platform
           </p>
           <p className="mt-4 text-lg text-gray-500">
-            Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
-            Malesuada adipiscing sagittis vel nulla nec.
+            At AdaptLeap, the most fundamental thing for us is to ensure that
+            our customers are completely 100% satisfied. We strive to exceed
+            your expectations, offering customized solutions and high-quality
+            services that reflect our commitment to excellence and complete
+            customer satisfaction.
           </p>
         </div>
         <div className="mt-12 lg:col-span-2 lg:mt-0">

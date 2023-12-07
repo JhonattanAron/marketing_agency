@@ -1,6 +1,4 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { Link } from "react-router-dom";
-import { Typewriter } from "react-simple-typewriter";
 
 function Header(props) {
   return (
@@ -9,44 +7,15 @@ function Header(props) {
         <div className="mx-auto max-w-3xl pt-20 pb-32 sm:pt-48 sm:pb-40">
           <div>
             <div>
-              <h1 className="text-4x1 font-bold tracking-tight sm:text-center sm:text-7xl">
-                Finds{" "}
-                <div
-                  className="inline-flex"
-                  style={{ color: "#2a77d6", fontWeight: "bold" }}
-                >
-                  <Typewriter
-                    words={[
-                      "Web Services",
-                      "Mobile Services",
-                      "Desing Services",
-                      "BlockChain Services",
-                      "Frontend Services",
-                      "Backend Services",
-                      "Artificial intelligence",
-                    ]}
-                    loop={5}
-                    cursor
-                    cursorStyle="_"
-                    typeSpeed={70}
-                    delaySpeed={1000}
-                    deleteSpeed={50}
-                  />
-                </div>
+              <h1 className="text-4x1 w font-bold tracking-tight sm:text-center sm:text-6xl">
+                Case Studies
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600 sm:text-center">
                 <ul>
                   <li className="inline-flex border-b-2 border-transparent hover:border-blue-900 m-3 transition duration-300 ease-in-out">
-                    <Link to={"/servicios"}>Web Services</Link>
-                  </li>
-                  <li className="inline-flex border-b-2 border-transparent hover:border-blue-900 m-3 transition duration-300 ease-in-out">
-                    <Link to={"/servicios"}>Mobil Services</Link>
-                  </li>
-                  <li className="inline-flex border-b-2 border-transparent hover:border-blue-900 m-3 transition duration-300 ease-in-out">
-                    <Link to={"/servicios"}>BlockChain Services</Link>
-                  </li>
-                  <li className="inline-flex border-b-2 border-transparent hover:border-blue-900 m-3 transition duration-300 ease-in-out">
-                    <Link to={"/servicios"}>Artificial intelligence</Link>
+                    We transform challenges into solutions. Find out how Our
+                    experience and dedication have driven the success of our
+                    clients. Let's build together the path to business triumph
                   </li>
                 </ul>
               </p>
