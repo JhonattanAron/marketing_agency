@@ -5,8 +5,9 @@ module.exports = {
     extend: {
       colors: {
         /*Aqui se puede agregar nuevos colores*/
-        "blue-dark": "#2f536e",
+        "blue-dark": "#75d9ea",
         "black-transparent": "rgba(0,0,0,0.9)",
+        "white-transparent": "rgba(255,255,255,0.7)",
       },
     },
     boxShadow: {

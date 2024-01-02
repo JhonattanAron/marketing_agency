@@ -1,32 +1,30 @@
-import { connect } from 'react-redux';
-import logo from 'assets/img/logo.png'
+import { connect } from "react-redux";
+import logo from "assets/img/logo.webp";
 
 const navigation = {
   solutions: [
-    { name: 'Marketing', href: '#' },
-    { name: 'Analytics', href: '#' },
-    { name: 'Commerce', href: '#' },
-    { name: 'Insights', href: '#' },
+    { name: "Marketing", href: "#" },
+    { name: "Analytics", href: "#" },
+    { name: "Commerce", href: "#" },
+    { name: "Insights", href: "#" },
   ],
-  support: [
-    { name: 'Contact', href: '#' },
-  ],
+  support: [{ name: "Contact", href: "#" }],
   company: [
-    { name: 'Casos', href: '#' },
-    { name: 'Servicios', href: '#' },
-    { name: 'Nosotros', href: '#' },
-    { name: 'Carreras', href: '#' },
-    { name: 'Blog', href: '#' },
+    { name: "Casos", href: "#" },
+    { name: "Servicios", href: "#" },
+    { name: "Nosotros", href: "#" },
+    { name: "Carreras", href: "#" },
+    { name: "Blog", href: "#" },
   ],
   legal: [
-    { name: 'Claim', href: '#' },
-    { name: 'Privacy', href: '#' },
-    { name: 'Terms', href: '#' },
+    { name: "Claim", href: "#" },
+    { name: "Privacy", href: "#" },
+    { name: "Terms", href: "#" },
   ],
   social: [
     {
-      name: 'Facebook',
-      href: '#',
+      name: "Facebook",
+      href: "#",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -38,8 +36,8 @@ const navigation = {
       ),
     },
     {
-      name: 'Instagram',
-      href: '#',
+      name: "Instagram",
+      href: "#",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -51,8 +49,8 @@ const navigation = {
       ),
     },
     {
-      name: 'Twitter',
-      href: '#',
+      name: "Twitter",
+      href: "#",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
@@ -60,8 +58,8 @@ const navigation = {
       ),
     },
     {
-      name: 'GitHub',
-      href: '#',
+      name: "GitHub",
+      href: "#",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -73,8 +71,8 @@ const navigation = {
       ),
     },
     {
-      name: 'Dribbble',
-      href: '#',
+      name: "Dribbble",
+      href: "#",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -86,8 +84,7 @@ const navigation = {
       ),
     },
   ],
-}
-
+};
 
 function Footer() {
   return (
@@ -102,15 +99,20 @@ function Footer() {
               src={logo}
               width={50}
               height={70}
-              className='inline-flex'
-              alt='LogoNav'
+              className="inline-flex"
+              alt="LogoNav"
             />
             <p className="text-base text-white">
-              Making the world a better place through constructing elegant hierarchies.
+              Making the world a better place through constructing elegant
+              hierarchies.
             </p>
             <div className="flex space-x-6">
               {navigation.social.map((item) => (
-                <a key={item.name} href={item.href} className="text-white hover:text-white">
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="text-white hover:text-white"
+                >
                   <span className="sr-only">{item.name}</span>
                   <item.icon className="h-6 w-6" aria-hidden="true" />
                 </a>
@@ -125,7 +127,10 @@ function Footer() {
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.solutions.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className="text-base text-gray-400 hover:text-white">
+                      <a
+                        href={item.href}
+                        className="text-base text-gray-400 hover:text-white"
+                      >
                         {item.name}
                       </a>
                     </li>
@@ -138,7 +143,10 @@ function Footer() {
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.support.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className="text-base text-gray-400 hover:text-white">
+                      <a
+                        href={item.href}
+                        className="text-base text-gray-400 hover:text-white"
+                      >
                         {item.name}
                       </a>
                     </li>
@@ -153,7 +161,10 @@ function Footer() {
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.company.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className="text-base text-gray-400 hover:text-white">
+                      <a
+                        href={item.href}
+                        className="text-base text-gray-400 hover:text-white"
+                      >
                         {item.name}
                       </a>
                     </li>
@@ -166,7 +177,10 @@ function Footer() {
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.legal.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className="text-base text-gray-400 hover:text-gray-900">
+                      <a
+                        href={item.href}
+                        className="text-base text-gray-400 hover:text-gray-900"
+                      >
                         {item.name}
                       </a>
                     </li>
@@ -177,19 +191,16 @@ function Footer() {
           </div>
         </div>
         <div className="mt-12 border-t border-gray-200 pt-8">
-          <p className="text-base text-gray-400 xl:text-center">&copy; 2023 AdaptLeap Agency by Aron Cachago, Inc. All rights reserved.</p>
+          <p className="text-base text-gray-400 xl:text-center">
+            &copy; 2023 AdaptLeap Agency by Aron Cachago, Inc. All rights
+            reserved.
+          </p>
         </div>
       </div>
     </footer>
-  )
+  );
 }
 
-const mapStateToProps = (state) => {
+const mapStateToProps = (state) => {};
 
-}
-
-
-export default connect(mapStateToProps, {
-
-})(Footer);
-
+export default connect(mapStateToProps, {})(Footer);
