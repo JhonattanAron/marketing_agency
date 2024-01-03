@@ -1,4 +1,4 @@
-FROM node:18
+FROM node:18-alpine3.15
 
 WORKDIR /app
 
@@ -12,4 +12,4 @@ RUN npm i --production
 
 EXPOSE 3000
 
-CMD ["npm" , "run" , "serve"]
+CMD ["npm", "run", "serve"]
