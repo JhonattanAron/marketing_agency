@@ -2,9 +2,11 @@ import { Popover, Transition } from "@headlessui/react";
 import { Bars3Icon } from "@heroicons/react/24/outline";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { HomeIcon } from "@heroicons/react/24/outline";
-import { ShoppingCartIcon } from "@heroicons/react/24/outline";
-import { ChatBubbleBottomCenterIcon } from "@heroicons/react/24/outline";
+import { InformationCircleIcon } from "@heroicons/react/24/outline";
+import { TagIcon } from "@heroicons/react/24/outline";
 import { ChatBubbleOvalLeftEllipsisIcon } from "@heroicons/react/24/outline";
+import { BookOpenIcon } from "@heroicons/react/24/outline";
+import { ChatBubbleLeftRightIcon } from "@heroicons/react/24/outline";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -24,20 +26,29 @@ const solutions = [
     icon: <HomeIcon class="h-6 w-6 text-black" />,
   },
   {
-    name: "Menu",
-    href: "/menu",
-    icon: <ShoppingCartIcon class="h-6 w-6 text-black" />,
+    name: "Cases",
+    href: "/casos",
+    icon: <BookOpenIcon className="h-6 w-6 text-gray-500" />,
   },
   {
-    name: "Contacto Para Eventos",
-
-    href: "/contactoenv",
-    icon: <ChatBubbleBottomCenterIcon class="h-6 w-6 text-black" />,
+    name: "Nosotros",
+    href: "/nosotros",
+    icon: <InformationCircleIcon class="h-6 w-6 text-black" />,
   },
   {
-    name: "Contactanos",
-    href: "/contacto",
+    name: "Carrers",
+    href: "/carreras",
+    icon: <TagIcon class="h-6 w-6 text-black" />,
+  },
+  {
+    name: "Blog",
+    href: "/blog",
     icon: <ChatBubbleOvalLeftEllipsisIcon class="h-6 w-6 text-black" />,
+  },
+  {
+    name: "Contacto",
+    href: "/contacto",
+    icon: <ChatBubbleLeftRightIcon class="h-6 w-6 text-black" />,
   },
 ];
 
@@ -103,32 +114,6 @@ export default function PopoverNav() {
                         <Typography>Support</Typography>
                       </AccordionSummary>
                       <AccordionDetails>
-                        <a
-                          href="/profile"
-                          className="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500/50"
-                        >
-                          <UserIcon class="h-6 w-6 text-gray-500" />
-
-                          <div className="flex h-10 w-10 shrink-0 items-center justify-center text-white sm:h-12 sm:w-12"></div>
-                          <div className="ml-4">
-                            <p className="text-sm font-medium text-gray-900">
-                              Perfil
-                            </p>
-                          </div>
-                        </a>
-                        <a
-                          href="/calificar"
-                          className="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500/50"
-                        >
-                          <HeartIcon class="h-6 w-6 text-gray-500" />
-
-                          <div className="flex h-10 w-10 shrink-0 items-center justify-center text-white sm:h-12 sm:w-12"></div>
-                          <div className="ml-4">
-                            <p className="text-sm font-medium text-gray-900">
-                              Calificar
-                            </p>
-                          </div>
-                        </a>
                         <a
                           href="/reportar"
                           className="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500/50"
