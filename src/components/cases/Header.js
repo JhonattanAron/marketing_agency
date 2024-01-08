@@ -25,7 +25,7 @@ function Header(props) {
               className="absolute inset-x-0 -z-10 transform-gpu overflow-hidden blur-sm sm:top-[calc(100%-30rem)]"
             >
               <img
-                className=" h-screen overflow-hidden object-none xl:h-auto "
+                className=" w-full h-full overflow-hidden object-cover xl:h-auto "
                 src="https://i.ibb.co/tHLk9By/software-development-office-with-programmers-weari.jpg"
                 alt="fondo"
               ></img>
