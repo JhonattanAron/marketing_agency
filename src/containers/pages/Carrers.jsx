@@ -3,15 +3,15 @@ import Layout from "hocs/layouts/layout";
 import Footer from "components/navigation/Footer";
 
 function Carrers() {
-    return (
-        <Layout>
-            <Navbar />
-            <div className="pt-28">
-                Carrers
-                <Footer />
-            </div>
-        </Layout>
-    )
+  return (
+    <>
+      <Navbar />
+      <Layout>
+        <div className="pt-28">Carrers</div>
+      </Layout>
+      <Footer />
+    </>
+  );
 }
 
 export default Carrers;

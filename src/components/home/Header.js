@@ -9,7 +9,7 @@ function Header(props) {
         <div className=" mx-auto w-3/4 pt-20 pb-32 sm:pt-48 sm:pb-40">
           <div>
             <div>
-              <h1 className="text-4xl text-white font-bold tracking-tight sm:text-center sm:text-7xl">
+              <h1 className="text-4xl text-orange-400 font-bold tracking-tight sm:text-center sm:text-7xl">
                 Finds{" "}
                 <div
                   className="inline-flex text-4xl sm:text-7xl"
@@ -77,7 +77,7 @@ function Header(props) {
             >
               <img
                 className=" h-screen overflow-hidden object-none xl:h-auto "
-                src="https://images.unsplash.com/photo-1589254065878-42c9da997008?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="fondo"
               ></img>
             </div>

@@ -5,16 +5,19 @@ import Header from "components/cases/Header";
 import CasesList from "components/cases/cases_list";
 
 function Cases() {
-    return (
-        <Layout>
-            <Navbar />
-            <div className="pt-28">
-                <Header />
-                <CasesList/>
-            </div>
-            <Footer />
-        </Layout>
-    )
+  return (
+    <>
+      <Navbar />
+
+      <Layout>
+        <div className="pt-28">
+          <Header />
+          <CasesList />
+        </div>
+      </Layout>
+      <Footer />
+    </>
+  );
 }
 
 export default Cases;

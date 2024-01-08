@@ -10,21 +10,23 @@ import BlogList from "components/home/BlogList";
 import Navbar from "components/navigation/Navbar";
 
 function Home() {
-    return (
+  return (
+    <>
+      <Navbar />
+      <div className="pt-28">
         <Layout>
-            <Navbar />
-            <div className="pt-28">
-                <Header />
-                <IncentivesHome />
-                <BlogSectionHome />
-                <Features />
-                <CTA />
-                <LogoCloud />
-                <BlogList />
-            </div>
-            <Footer />
+          <Header />
+          <IncentivesHome />
+          <BlogSectionHome />
+          <Features />
+          <CTA />
+          <LogoCloud />
+          <BlogList />
         </Layout>
-    )
+      </div>
+      <Footer />
+    </>
+  );
 }
 
 export default Home;

@@ -1,5 +1,5 @@
 import { Popover, Transition } from "@headlessui/react";
-import { Bars3Icon } from "@heroicons/react/24/outline";
+import { Bars3Icon, WindowIcon } from "@heroicons/react/24/outline";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { HomeIcon } from "@heroicons/react/24/outline";
 import { InformationCircleIcon } from "@heroicons/react/24/outline";
@@ -12,8 +12,6 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { UserIcon } from "@heroicons/react/24/outline";
-import { HeartIcon } from "@heroicons/react/24/outline";
 import { ExclamationTriangleIcon } from "@heroicons/react/24/outline";
 
 import { Fragment } from "react";
@@ -31,7 +29,12 @@ const solutions = [
     icon: <BookOpenIcon className="h-6 w-6 text-gray-500" />,
   },
   {
-    name: "Nosotros",
+    name: "Servives",
+    href: "/servicios",
+    icon: <WindowIcon className="h-6 w-6 text-gray-500" />,
+  },
+  {
+    name: "About",
     href: "/nosotros",
     icon: <InformationCircleIcon class="h-6 w-6 text-black" />,
   },
