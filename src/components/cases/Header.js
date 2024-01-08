@@ -26,7 +26,7 @@ function Header(props) {
             >
               <img
                 className=" h-screen overflow-hidden object-none xl:h-auto "
-                src="https://images.unsplash.com/photo-1525338078858-d762b5e32f2c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="https://i.ibb.co/tHLk9By/software-development-office-with-programmers-weari.jpg"
                 alt="fondo"
               ></img>
             </div>
