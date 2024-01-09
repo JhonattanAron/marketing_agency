@@ -76,7 +76,7 @@ function Header(props) {
               className="absolute inset-x-0 -z-10 transform-gpu overflow-hidden sm:top-[calc(100%-30rem)]"
             >
               <img
-                className="w-full h-full overflow-hidden object-cover"
+                className=" h-screen  xl:w-full xl:h-full overflow-hidden object-cover"
                 src="https://i.ibb.co/Wx4kBZ0/i-want-an-ai-generated-visual-representation-of-a.jpg"
                 alt="fondo"
               ></img>

@@ -24,7 +24,7 @@ function Header(props) {
               className="absolute inset-x-0 -z-10 transform-gpu overflow-hidden  sm:top-[calc(100%-30rem)]"
             >
               <img
-                className=" h-screen overflow-hidden object-none xl:h-auto "
+                className="h-screen overflow-hidden object-none xl:h-auto "
                 src="https://images.unsplash.com/photo-1661468038478-50ca22780f5a?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="fondo"
               ></img>
