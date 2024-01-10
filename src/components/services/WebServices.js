@@ -1,7 +1,11 @@
-export default function WebServices() {
+export default function WebServices(props) {
   return (
-    <section>
-      <div class="container p-4 mx-auto bg-white max-w-7xl sm:p-6 lg:p-8 ">
+    <section className="p-[3rem]">
+      <div
+        class={
+          "container p-4 bg-white max-w-7xl sm:p-6 lg:p-8 " + props.position
+        }
+      >
         <div class="flex flex-wrap -mx-8">
           <div class="w-full px-8 lg:w-1/2">
             <div class="pb-12 mb-12 border-b lg:mb-0 lg:pb-0 lg:border-b-0">

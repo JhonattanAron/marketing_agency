@@ -44,10 +44,11 @@ function Navbar() {
                 >
                   About Us
                 </NavLink>
-                <NavLink
+                {/*<NavLink
                   to="/carreras"
                   className="text-lg inline-flex font-medium border-b-2 border-transparent hover:border-blue-500 m-3 transition duration-300 ease-in-out text-white hover:text-blue-500 "
                 >
+                  
                   Carrers
                 </NavLink>
                 <NavLink
@@ -56,6 +57,7 @@ function Navbar() {
                 >
                   Blog
                 </NavLink>
+                  >*/}
                 <NavLink
                   to="/contacto"
                   className="text-lg inline-flex font-medium border-b-2 border-transparent hover:border-blue-500 m-3 transition duration-300 ease-in-out text-white hover:text-blue-500 "
