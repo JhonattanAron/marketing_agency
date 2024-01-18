@@ -1,3 +1,5 @@
+import ServicesHome from "components/home/ServiciosHome";
+
 const incentives = [
   {
     name: "Free Interactions",
@@ -25,6 +27,7 @@ const incentives = [
 export default function IncentivesHome() {
   return (
     <div className="bg-white">
+      <ServicesHome />
       <div className="mx-auto max-w-7xl py-24 sm:px-2 sm:py-32 lg:px-4">
         <div className="mx-auto max-w-2xl px-4 lg:max-w-none">
           <div className="max-w-3xl">

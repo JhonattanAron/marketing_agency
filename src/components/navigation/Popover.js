@@ -38,7 +38,7 @@ const solutions = [
     href: "/nosotros",
     icon: <InformationCircleIcon class="h-6 w-6 text-black" />,
   },
-  {
+  /*{
     name: "Carrers",
     href: "/carreras",
     icon: <TagIcon class="h-6 w-6 text-black" />,
@@ -47,7 +47,7 @@ const solutions = [
     name: "Blog",
     href: "/blog",
     icon: <ChatBubbleOvalLeftEllipsisIcon class="h-6 w-6 text-black" />,
-  },
+  },*/
   {
     name: "Contacto",
     href: "/contacto",
