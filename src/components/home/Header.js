@@ -1,29 +1,28 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import { Link } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
 
 function Header(props) {
   return (
     <main className="sm:h-[90vh]">
-      <div className="relative px-3  lg:px-8">
-        <div className=" mx-auto w-3/4 pt-20 pb-32 sm:pt-48 sm:pb-40">
+      <div className="relative px-3 lg:px-8">
+        <div className="mx-auto w-3/4 pt-20 pb-32 sm:pt-48 sm:pb-40">
           <div>
             <div>
               <h1 className="text-4xl text-white font-bold tracking-tight sm:text-center sm:text-7xl">
-                Finds{" "}
+                Encuentra{" "}
                 <div
                   className="inline-flex text-4xl sm:text-7xl"
                   style={{ color: "#2a77d6", fontWeight: "bold" }}
                 >
                   <Typewriter
                     words={[
-                      "Web Services",
-                      "Mobile Services",
-                      "Desing Services",
-                      "BlockChain Services",
-                      "Frontend Services",
-                      "Backend Services",
-                      "Artificial intelligence",
+                      "Servicios Web",
+                      "Servicios Móviles",
+                      "Servicios de Diseño",
+                      "Servicios de Blockchain",
+                      "Servicios de Frontend",
+                      "Servicios de Backend",
+                      "Inteligencia Artificial",
                     ]}
                     loop={5}
                     cursor
@@ -37,16 +36,16 @@ function Header(props) {
               <p className="mt-10 ml-auto mr-auto xl:w-2/4 center rounded-2xl bg-white-transparent text-lg leading-8 text-gray-900 font-bold sm:text-center">
                 <ul className="flex flex-wrap xl:block">
                   <li className="inline-flex border-b-2 border-transparent hover:border-blue-900 m-3 transition duration-300 ease-in-out">
-                    <Link to={"/servicios"}>Web Services</Link>
+                    <Link to={"/servicios"}>Servicios Web</Link>
                   </li>
                   <li className="inline-flex border-b-2 border-transparent hover:border-blue-900 m-3 transition duration-300 ease-in-out">
-                    <Link to={"/servicios"}>Mobil Services</Link>
+                    <Link to={"/servicios"}>Servicios Móviles</Link>
                   </li>
                   <li className="inline-flex border-b-2 border-transparent hover:border-blue-900 m-3 transition duration-300 ease-in-out">
-                    <Link to={"/servicios"}>BlockChain Services</Link>
+                    <Link to={"/servicios"}>Servicios de Blockchain</Link>
                   </li>
                   <li className="inline-flex border-b-2 border-transparent hover:border-blue-900 m-3 transition duration-300 ease-in-out">
-                    <Link to={"/servicios"}>Artificial intelligence</Link>
+                    <Link to={"/servicios"}>Inteligencia Artificial</Link>
                   </li>
                 </ul>
               </p>
@@ -55,7 +54,7 @@ function Header(props) {
                   href="#"
                   className="inline-block rounded-lg bg-indigo-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-indigo-600 hover:bg-indigo-700 hover:ring-indigo-700"
                 >
-                  Get started
+                  Empezar
                   <span className="text-indigo-200" aria-hidden="true">
                     &rarr;
                   </span>
@@ -64,7 +63,7 @@ function Header(props) {
                   href="#"
                   className="inline-block rounded-lg px-4 py-1.5 text-base font-semibold leading-7 text-gray-900 ring-1 ring-white-transparent bg-white-transparent hover:ring-gray-900/20"
                 >
-                  Live demo
+                  Demo en vivo
                   <span className="text-gray-400" aria-hidden="true">
                     &rarr;
                   </span>

@@ -1,5 +1,3 @@
-import { connect } from "react-redux";
-
 function ServiceListBen({ data = [] }) {
   return (
     <ul className="gap-6 mt-8 ">

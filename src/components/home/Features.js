@@ -2,39 +2,39 @@ import { CheckIcon } from "@heroicons/react/24/outline";
 
 const features = [
   {
-    name: "Web Development Services",
+    name: "Servicios de Desarrollo Web",
     description:
-      "Elevate your online presence with our comprehensive web development solutions. From inviting team collaboration to seamless list views, we streamline your digital experience.",
+      "Eleve su presencia en línea con nuestras completas soluciones de desarrollo web. Desde la invitación a la colaboración en equipo hasta las vistas de lista sin problemas, simplificamos su experiencia digital.",
   },
   {
-    name: "Responsive Designs",
+    name: "Diseños Adaptables",
     description:
-      "Crafting keyboard shortcuts for success, we ensure your website is not just visually appealing but also user-friendly, enhancing navigation and engagement.",
+      "Creando accesos directos para el éxito, nos aseguramos de que su sitio web no solo sea visualmente atractivo, sino también fácil de usar, mejorando la navegación y la participación.",
   },
   {
-    name: "Optimized Calendars",
+    name: "Calendarios Optimizados",
     description:
-      "Syncing seamlessly with your business goals, our web development services include optimized calendars for efficient scheduling and management of essential events.",
+      "Sincronizándose perfectamente con los objetivos de su empresa, nuestros servicios de desarrollo web incluyen calendarios optimizados para una programación eficiente y la gestión de eventos esenciales.",
   },
   {
-    name: "Proactive Notifications",
+    name: "Notificaciones Proactivas",
     description:
-      "Stay informed and ahead with our proactive notification systems. We keep you in the loop, ensuring you never miss a critical update or opportunity.",
+      "Manténgase informado y adelante con nuestros sistemas de notificación proactiva. Lo mantenemos al tanto, asegurándonos de que nunca se pierda una actualización crítica u oportunidad.",
   },
   {
-    name: "Interactive Boards",
+    name: "Tableros Interactivos",
     description:
-      "Experience project management like never before with interactive boards that facilitate collaboration, streamline workflows, and enhance productivity.",
+      "Experimente la gestión de proyectos como nunca antes con tableros interactivos que facilitan la colaboración, simplifican los flujos de trabajo y mejoran la productividad.",
   },
   {
-    name: "Comprehensive Reporting",
+    name: "Informes Exhaustivos",
     description:
-      "Gain valuable insights into your web performance. Our reporting tools provide in-depth analytics, allowing you to make informed decisions for continued growth.",
+      "Obtenga información valiosa sobre el rendimiento de su sitio web. Nuestras herramientas de informes proporcionan análisis detallados, permitiéndole tomar decisiones informadas para un crecimiento continuo.",
   },
   {
-    name: "Mobile-Friendly Solutions",
+    name: "Soluciones Adaptadas a Móviles",
     description:
-      "Your website on the go! Our mobile app development ensures your business remains accessible and user-friendly across various devices, providing a seamless experience.",
+      "¡Su sitio web en movimiento! Nuestro desarrollo de aplicaciones móviles garantiza que su empresa permanezca accesible y fácil de usar en varios dispositivos, brindando una experiencia sin problemas.",
   },
 ];
 
@@ -44,17 +44,17 @@ export default function Features() {
       <div className="mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:py-24 lg:px-8">
         <div>
           <h2 className="text-lg font-semibold text-indigo-600">
-            Everything you need
+            Todo lo que necesitas
           </h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900">
-            All-in-one platform
+            Plataforma integral
           </p>
           <p className="mt-4 text-lg text-gray-500">
-            At AdaptLeap, the most fundamental thing for us is to ensure that
-            our customers are completely 100% satisfied. We strive to exceed
-            your expectations, offering customized solutions and high-quality
-            services that reflect our commitment to excellence and complete
-            customer satisfaction.
+            En AdaptLeap, lo más fundamental para nosotros es asegurar que
+            nuestros clientes estén completamente satisfechos al 100%. Nos
+            esforzamos por superar sus expectativas, ofreciendo soluciones
+            personalizadas y servicios de alta calidad que reflejan nuestro
+            compromiso con la excelencia y la completa satisfacción del cliente.
           </p>
         </div>
         <div className="mt-12 lg:col-span-2 lg:mt-0">

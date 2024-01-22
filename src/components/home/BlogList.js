@@ -3,13 +3,13 @@ const posts = [
     title: "QuitoShops",
     href: "#",
     category: {
-      name: "Review",
+      name: "Reseña",
       href: "#",
       color: "bg-indigo-100 text-indigo-800",
     },
     description:
-      "Adapleat has been essential to the success of my business. Their expert team not only completely redesigned our website, but also improved the user experience, resulting in a significant increase in our customer engagement. Thank you Adapleat for your excellent service and professionalism! I highly recommend their services.",
-    date: "Mar 16, 2020",
+      "Adapleat ha sido esencial para el éxito de mi negocio. Su equipo de expertos no solo rediseñó por completo nuestro sitio web, sino que también mejoró la experiencia del usuario, lo que resultó en un aumento significativo en la participación de nuestros clientes. ¡Gracias Adapleat por su excelente servicio y profesionalismo! Recomiendo encarecidamente sus servicios.",
+    date: "16 de marzo de 2020",
     datetime: "2023-10-16",
     author: {
       name: "Aron Cachago",
@@ -22,10 +22,10 @@ const posts = [
   {
     title: "Nat Spa",
     href: "#",
-    category: { name: "Review", href: "#", color: "bg-pink-100 text-pink-800" },
+    category: { name: "Reseña", href: "#", color: "bg-pink-100 text-pink-800" },
     description:
-      "I am extremely satisfied with Adapleat's advice and work. They transformed our old website into a modern and attractive platform. Additionally, their personalized attention and quick response to our needs were impressive. Without a doubt, Adapleat is the ideal partner for any company looking to improve its online presence!",
-    date: "Mar 10, 2020",
+      "Estoy extremadamente satisfecho con los consejos y el trabajo de Adapleat. Transformaron nuestro antiguo sitio web en una plataforma moderna y atractiva. Además, su atención personalizada y rápida respuesta a nuestras necesidades fueron impresionantes. Sin duda, Adapleat es el socio ideal para cualquier empresa que busque mejorar su presencia en línea.",
+    date: "10 de marzo de 2020",
     datetime: "2020-03-10",
     author: {
       name: "Dessie Ryan",
@@ -39,13 +39,13 @@ const posts = [
     title: "Joy Technologys",
     href: "#",
     category: {
-      name: "Review",
+      name: "Reseña",
       href: "#",
       color: "bg-green-100 text-green-800",
     },
     description:
-      "Adapleat exceeded my expectations. Their team not only fully understood our vision, but they also provided us with creative solutions to improve the functionality and design of our website. The collaboration was seamless, and the end result was exactly what we needed. Definitely, Adapleat is the perfect partner for web development.",
-    date: "Feb 12, 2020",
+      "Adapleat superó mis expectativas. Su equipo no solo comprendió completamente nuestra visión, sino que también nos proporcionó soluciones creativas para mejorar la funcionalidad y el diseño de nuestro sitio web. La colaboración fue perfecta y el resultado final fue exactamente lo que necesitábamos. Definitivamente, Adapleat es el socio perfecto para el desarrollo web.",
+    date: "12 de febrero de 2020",
     datetime: "2020-02-12",
     author: {
       name: "Rafael Collins",
@@ -67,7 +67,7 @@ export default function BlogList() {
       <div className="relative mx-auto max-w-lg divide-y-2 divide-gray-200 lg:max-w-7xl">
         <div>
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Our Clients Currently
+            Nuestros Clientes Actualmente
           </h2>
           <p className="mt-3 text-xl text-gray-500 sm:mt-4">
             Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat
@@ -115,7 +115,7 @@ export default function BlogList() {
                   <div className="flex space-x-1 text-sm text-gray-500">
                     <time dateTime={post.datetime}>{post.date}</time>
                     <span aria-hidden="true">&middot;</span>
-                    <span>{post.readingTime} read</span>
+                    <span>{post.readingTime} min de lectura</span>
                   </div>
                 </div>
               </div>

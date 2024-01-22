@@ -1,60 +1,61 @@
-import ServicesHome from "components/home/ServiciosHome";
+import ServiciosHome from "components/home/ServiciosHome";
 
-const incentives = [
+const incentivos = [
   {
-    name: "Free Interactions",
+    name: "Interacciones Gratuitas",
     imageSrc:
       "https://tailwindui.com/img/ecommerce/icons/icon-shipping-simple.svg",
     description:
-      "we simply integrate them into the development cost. Someone is financing them, and it is not the client.",
+      "simplemente las integramos en el costo de desarrollo. Alguien las está financiando, y no es el cliente.",
   },
   {
-    name: "10-phase guarantee",
+    name: "Garantía de 10 Fases",
     imageSrc:
       "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
     description:
-      "If something breaks during the first 10 phases of development, we will fix it. After that point, it will depend on your maintenance.",
+      "Si algo se rompe durante las primeras 10 fases de desarrollo, lo solucionaremos. Después de ese punto, dependerá de tu mantenimiento.",
   },
   {
-    name: "Requirements exchange",
+    name: "Intercambio de Requisitos",
     imageSrc:
       "https://tailwindui.com/img/ecommerce/icons/icon-exchange-simple.svg",
     description:
-      "If you are not satisfied with any requirement, as experts we will be ready for any changes",
+      "Si no estás satisfecho con algún requisito, como expertos, estaremos listos para cualquier cambio.",
   },
 ];
 
-export default function IncentivesHome() {
+export default function IncentivosHome() {
   return (
     <div className="bg-white">
-      <ServicesHome />
+      <ServiciosHome />
       <div className="mx-auto max-w-7xl py-24 sm:px-2 sm:py-32 lg:px-4">
         <div className="mx-auto max-w-2xl px-4 lg:max-w-none">
           <div className="max-w-3xl">
             <h2 className="text-4xl font-bold tracking-tight text-gray-900">
-              Innovate with Us: Your Ideal Partner in Software Development
+              Innova con Nosotros: Tu Socio Ideal en Desarrollo de Software
             </h2>
             <p className="mt-4 text-gray-500">
-              Transform your vision into reality with our leading software
-              development agency. From concept to implementation, we offer
-              customized solutions that drive innovation and enhance your
-              success. Discover how we can take your project to the next level,
-              combining technical expertise with a customer-centric approach.
-              Turn your ideas into world-class software with us!
+              Transforma tu visión en realidad con nuestra destacada agencia de
+              desarrollo de software. Desde el concepto hasta la implementación,
+              ofrecemos soluciones personalizadas que impulsan la innovación y
+              mejoran tu éxito. Descubre cómo podemos llevar tu proyecto al
+              siguiente nivel, combinando experiencia técnica con un enfoque
+              centrado en el cliente. ¡Convierte tus ideas en software de clase
+              mundial con nosotros!
             </p>
           </div>
           <div className="mt-16 grid grid-cols-1 gap-y-10 gap-x-8 lg:grid-cols-3">
-            {incentives.map((incentive) => (
-              <div key={incentive.name} className="sm:flex lg:block">
+            {incentivos.map((incentivo) => (
+              <div key={incentivo.name} className="sm:flex lg:block">
                 <div className="sm:flex-shrink-0">
-                  <img className="h-16 w-16" src={incentive.imageSrc} alt="" />
+                  <img className="h-16 w-16" src={incentivo.imageSrc} alt="" />
                 </div>
                 <div className="mt-4 sm:mt-0 sm:ml-6 lg:mt-6 lg:ml-0">
                   <h3 className="text-sm font-medium text-gray-900">
-                    {incentive.name}
+                    {incentivo.name}
                   </h3>
                   <p className="mt-2 text-sm text-gray-500">
-                    {incentive.description}
+                    {incentivo.description}
                   </p>
                 </div>
               </div>
