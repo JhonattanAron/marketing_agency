@@ -3,10 +3,10 @@ function BlogSectionHome() {
     {
       title: "The Gourmet Traveler's Inn",
       href: "#",
-      category: { name: "review", href: "#" },
+      category: { name: "reseña", href: "#" },
       description:
-        "Thanks to the collaboration with this agency, my start-up underwent an amazing transformation. His strategic approach and technical knowledge guided us from conception to success. Their team is not only professional, but also becomes a passionate ally in the entrepreneurial journey. I would recommend this agency without hesitation to any start-up looking for a real boost towards success!",
-      date: "Mar 16, 2023",
+        "Gracias a la colaboración con esta agencia, mi start-up experimentó una increíble transformación. Su enfoque estratégico y conocimientos técnicos nos guiaron desde la concepción hasta el éxito. Su equipo no solo es profesional, sino que también se convierte en un aliado apasionado en el viaje emprendedor. Recomendaría esta agencia sin dudarlo a cualquier start-up que busque un impulso real hacia el éxito.",
+      date: "16 de marzo de 2023",
       datetime: "2023-03-16",
       imageUrl:
         "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -21,10 +21,10 @@ function BlogSectionHome() {
     {
       title: "Urban Elegance",
       href: "#",
-      category: { name: "review", href: "#" },
+      category: { name: "reseña", href: "#" },
       description:
-        "Collaborating with this agency was the catalyst my start-up needed. His strategic approach and outstanding technical skills not only optimized our product but also revolutionized our business strategy. Thanks to their commitment and unique vision, our project went from a promising idea to a thriving reality. Their team not only provided solutions but also became an invaluable partner in our journey to business success. I would recommend this agency to any entrepreneur looking not only for results, but for a genuine and effective strategic partnership!",
-      date: "Mar 10, 2023",
+        "Colaborar con esta agencia fue el catalizador que mi start-up necesitaba. Su enfoque estratégico y habilidades técnicas sobresalientes no solo optimizaron nuestro producto, sino que también revolucionaron nuestra estrategia comercial. Gracias a su compromiso y visión única, nuestro proyecto pasó de ser una idea prometedora a una realidad próspera. Su equipo no solo proporcionó soluciones, sino que también se convirtió en un socio invaluable en nuestro viaje hacia el éxito empresarial. Recomendaría esta agencia a cualquier emprendedor que busque no solo resultados, sino también una asociación estratégica genuina y efectiva.",
+      date: "10 de marzo de 2023",
       datetime: "2022-03-10",
       imageUrl:
         "https://images.unsplash.com/photo-1595665593673-bf1ad72905c0?q=80&w=1028&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -39,10 +39,10 @@ function BlogSectionHome() {
     {
       title: "TecnoBoutique",
       href: "#",
-      category: { name: "review", href: "#" },
+      category: { name: "reseña", href: "#" },
       description:
-        "My experience with this agency was nothing short of transformative for my custom phone case start-up. From the beginning, your team demonstrated a deep understanding of our needs and exceptional creativity. They not only provided us with solid technical solutions but also guided us strategically in creating a unique brand. Thanks to their guidance and experience, our start-up went from being an isolated idea to a successful product line appreciated by our customers. His customer-centric approach and dedication to detail not only drove our business, but also made the entrepreneurial journey exciting and rewarding. I would without hesitation recommend this agency to any entrepreneur looking for a real boost to their vision!",
-      date: "Feb 12, 2023",
+        "Mi experiencia con esta agencia fue nada menos que transformadora para mi start-up de fundas de teléfonos personalizadas. Desde el principio, su equipo demostró una comprensión profunda de nuestras necesidades y una creatividad excepcional. No solo nos proporcionaron soluciones técnicas sólidas, sino que también nos guiaron estratégicamente en la creación de una marca única. Gracias a su orientación y experiencia, nuestra start-up pasó de ser una idea aislada a una línea de productos exitosa apreciada por nuestros clientes. Su enfoque centrado en el cliente y la dedicación al detalle no solo impulsaron nuestro negocio, sino que también hicieron que el viaje emprendedor fuera emocionante y gratificante. Recomendaría esta agencia sin dudarlo a cualquier emprendedor que busque un impulso real a su visión.",
+      date: "12 de febrero de 2023",
       datetime: "2023-02-12",
       imageUrl:
         "https://images.unsplash.com/photo-1542219550-76864b1bc385?q=80&w=1025&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -63,13 +63,13 @@ function BlogSectionHome() {
       <div className="relative mx-auto max-w-7xl">
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Power your Start-up: We Transform Ideas into Success
+            Impulsa tu Start-up: Transformamos Ideas en Éxito
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">
-            We are your strategic partner for business growth. From conception
-            to success, we promote your start-up with experience and unique
-            vision. Ready to take your idea to the next level? Join us and make
-            your start-up prosper
+            Somos tu socio estratégico para el crecimiento empresarial. Desde la
+            concepción hasta el éxito, promovemos tu start-up con experiencia y
+            visión única. ¿Listo para llevar tu idea al siguiente nivel? Únete a
+            nosotros y haz que tu start-up prospere.
           </p>
         </div>
         <div className="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
@@ -121,7 +121,7 @@ function BlogSectionHome() {
                     <div className="flex space-x-1 text-sm text-gray-500">
                       <time dateTime={post.datetime}>{post.date}</time>
                       <span aria-hidden="true">&middot;</span>
-                      <span>{post.readingTime} read</span>
+                      <span>{post.readingTime} min de lectura</span>
                     </div>
                   </div>
                 </div>

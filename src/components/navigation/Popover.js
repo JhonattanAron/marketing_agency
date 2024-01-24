@@ -3,8 +3,6 @@ import { Bars3Icon, WindowIcon } from "@heroicons/react/24/outline";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { HomeIcon } from "@heroicons/react/24/outline";
 import { InformationCircleIcon } from "@heroicons/react/24/outline";
-import { TagIcon } from "@heroicons/react/24/outline";
-import { ChatBubbleOvalLeftEllipsisIcon } from "@heroicons/react/24/outline";
 import { BookOpenIcon } from "@heroicons/react/24/outline";
 import { ChatBubbleLeftRightIcon } from "@heroicons/react/24/outline";
 import Accordion from "@mui/material/Accordion";
