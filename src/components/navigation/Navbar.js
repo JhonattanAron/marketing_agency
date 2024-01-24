@@ -2,65 +2,95 @@ import React from "react";
 import PopoverNav from "./Popover";
 import { NavLink } from "react-router-dom";
 import { DotLoader } from "react-spinners";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import logo from "../../assets/img/logo.webp";
 
 function Navbar() {
   const [loading] = useState(true);
 
+  const detectarScroll = () => {
+    const navbar = document.getElementById("navbar");
+    const link = document.getElementById("links");
+
+    if (window.scrollY > navbar.offsetTop) {
+      navbar.classList.remove("py-6");
+      navbar.classList.add("py-2");
+      navbar.classList.add("bg-white");
+      navbar.classList.add("text-black");
+      link.classList.add("text-black");
+      link.classList.remove("text-white");
+    } else {
+      navbar.classList.add("py-6");
+      navbar.classList.remove("bg-white");
+      navbar.classList.remove("text-black");
+      link.classList.remove("text-black");
+      link.classList.add("text-white");
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", detectarScroll);
+    return () => {
+      window.removeEventListener("scroll", detectarScroll);
+    };
+  }, []);
+
   return (
     <>
-      <div className="z-1 flex flex-wrap">
+      <div className={"z-1 flex flex-wrap"}>
         <section className="">
           <nav
             style={{ width: "100%", position: "fixed", top: 0, zIndex: 1000 }}
             className="flex justify-between text-white bg-black"
           >
-            <div className="py-6 flex w-full items-center">
+            <div
+              id="navbar"
+              className=" duration-500  py-6 flex w-full items-center"
+            >
               <a
                 className="text-3xl flex xl:mx-auto ml-3 font-bold font-heading"
                 href="/"
               >
-                <img className=" h-14 mr-4" src={logo} alt="logo" />
+                <img className="h-14 mr-4" src={logo} alt="logo" />
                 <span className="mt-2 text-blue-500">Adapt</span>
                 <span className="mt-2">Leap</span>
               </a>
-              <div className="xl:block hidden">
+              <div id="links" className="xl:block hidden text-white">
                 <NavLink
                   to="/casos"
-                  className="text-lg inline-flex font-medium border-b-2 border-transparent hover:border-blue-500 m-3 transition duration-300 ease-in-out text-white hover:text-blue-500 "
+                  className="text-lg inline-flex font-medium border-b-2 border-transparent hover:border-blue-500 m-3 transition duration-300 ease-in-out  hover:text-blue-500 "
                 >
                   Cases
                 </NavLink>
                 <NavLink
                   to="/servicios"
-                  className="text-lg inline-flex font-medium border-b-2 border-transparent hover:border-blue-500 m-3 transition duration-300 ease-in-out text-white hover:text-blue-500 "
+                  className="text-lg inline-flex font-medium border-b-2 border-transparent hover:border-blue-500 m-3 transition duration-300 ease-in-out  hover:text-blue-500 "
                 >
                   Services
                 </NavLink>
                 <NavLink
                   to="/nosotros"
-                  className="text-lg inline-flex font-medium border-b-2 border-transparent hover:border-blue-500 m-3 transition duration-300 ease-in-out text-white hover:text-blue-500 "
+                  className="text-lg inline-flex font-medium border-b-2 border-transparent hover:border-blue-500 m-3 transition duration-300 ease-in-out  hover:text-blue-500 "
                 >
                   About Us
                 </NavLink>
                 {/*<NavLink
                   to="/carreras"
-                  className="text-lg inline-flex font-medium border-b-2 border-transparent hover:border-blue-500 m-3 transition duration-300 ease-in-out text-white hover:text-blue-500 "
+                  className="text-lg inline-flex font-medium border-b-2 border-transparent hover:border-blue-500 m-3 transition duration-300 ease-in-out  hover:text-blue-500 "
                 >
                   
                   Carrers
                 </NavLink>
                 <NavLink
                   to="/blog"
-                  className="text-lg inline-flex font-medium border-b-2 border-transparent hover:border-blue-500 m-3 transition duration-300 ease-in-out text-white hover:text-blue-500 "
+                  className="text-lg inline-flex font-medium border-b-2 border-transparent hover:border-blue-500 m-3 transition duration-300 ease-in-out  hover:text-blue-500 "
                 >
                   Blog
                 </NavLink>
                   >*/}
                 <NavLink
                   to="/contacto"
-                  className="text-lg inline-flex font-medium border-b-2 border-transparent hover:border-blue-500 m-3 transition duration-300 ease-in-out text-white hover:text-blue-500 "
+                  className="text-lg inline-flex font-medium border-b-2 border-transparent hover:border-blue-500 m-3 transition duration-300 ease-in-out  hover:text-blue-500 "
                 >
                   Contact
                 </NavLink>
