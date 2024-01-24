@@ -61,16 +61,14 @@ export default function PopoverNav() {
       <Popover className="relative">
         {({ open }) => (
           <>
-            <Popover.Button
-              className={`${open ? "text-white" : "text-white/90"}`}
-            >
+            <Popover.Button>
               {iconMenu ? (
                 <span onClick={() => setIconMenu(false)}>
-                  <XMarkIcon class="h-10 w-10 text-white" />
+                  <XMarkIcon class="h-10 w-10" />
                 </span>
               ) : (
                 <span onClick={() => setIconMenu(true)}>
-                  <Bars3Icon class="h-10 w-10 text-white" />
+                  <Bars3Icon class="h-10 w-10" />
                 </span>
               )}
             </Popover.Button>

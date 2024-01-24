@@ -11,17 +11,24 @@ function Navbar() {
   const detectarScroll = () => {
     const navbar = document.getElementById("navbar");
     const link = document.getElementById("links");
-
+    const bground = document.getElementById("bground");
+    const popover = document.getElementById("popover");
     if (window.scrollY > navbar.offsetTop) {
+      popover.classList.add("text-black");
+      popover.classList.remove("text-white");
+      bground.classList.remove("bg-black");
+      bground.classList.add("bg-white");
       navbar.classList.remove("py-6");
       navbar.classList.add("py-2");
-      navbar.classList.add("bg-white");
       navbar.classList.add("text-black");
       link.classList.add("text-black");
       link.classList.remove("text-white");
     } else {
+      popover.classList.add("text-white");
+      popover.classList.remove("text-black");
       navbar.classList.add("py-6");
-      navbar.classList.remove("bg-white");
+      bground.classList.add("bg-black");
+      bground.classList.remove("bg-white");
       navbar.classList.remove("text-black");
       link.classList.remove("text-black");
       link.classList.add("text-white");
@@ -40,6 +47,7 @@ function Navbar() {
       <div className={"z-1 flex flex-wrap"}>
         <section className="">
           <nav
+            id="bground"
             style={{ width: "100%", position: "fixed", top: 0, zIndex: 1000 }}
             className="flex justify-between text-white bg-black"
           >
@@ -116,7 +124,9 @@ function Navbar() {
               className="relative navbar-burger self-center mr-12 xl:hidden"
               href="/#"
             >
-              <PopoverNav />
+              <span id="popover" className="text-white">
+                <PopoverNav />
+              </span>
             </a>
           </nav>
         </section>
