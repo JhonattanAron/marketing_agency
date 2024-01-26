@@ -1,7 +1,6 @@
 import Navbar from "components/navigation/Navbar";
 import Layout from "hocs/layouts/layout";
 import Footer from "components/navigation/Footer";
-import Header from "components/Contacto/Header";
 import FomrContact from "components/Contacto/contactoFomr";
 
 function Contact() {
@@ -10,8 +9,7 @@ function Contact() {
       <Navbar />
 
       <Layout>
-        <div className="pt-28">
-          <Header />
+        <div className="py-28 bg-contact">
           <FomrContact />
         </div>
       </Layout>
