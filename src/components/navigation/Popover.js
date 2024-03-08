@@ -1,5 +1,9 @@
 import { Popover, Transition } from "@headlessui/react";
-import { Bars3Icon, WindowIcon } from "@heroicons/react/24/outline";
+import {
+  AcademicCapIcon,
+  Bars3Icon,
+  WindowIcon,
+} from "@heroicons/react/24/outline";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { HomeIcon } from "@heroicons/react/24/outline";
 import { InformationCircleIcon } from "@heroicons/react/24/outline";
@@ -50,6 +54,11 @@ const solutions = [
     name: "Contacto",
     href: "/contacto",
     icon: <ChatBubbleLeftRightIcon class="h-6 w-6 text-black" />,
+  },
+  {
+    name: "Cursos",
+    href: "/cursos",
+    icon: <AcademicCapIcon class="h-6 w-6 text-black" />,
   },
 ];
 
