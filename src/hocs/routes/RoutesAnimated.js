@@ -8,6 +8,7 @@ import Carrers from "containers/pages/Carrers";
 import Cases from "containers/pages/Cases";
 import Contact from "containers/pages/Contact";
 import Services from "containers/pages/Services";
+import Cursos from "containers/pages/Cursos";
 
 export default function RoutesAnimated() {
   const location = useLocation();
@@ -30,6 +31,8 @@ export default function RoutesAnimated() {
         <Route path="/contacto" element={<Contact />} />
         {/*Servicios display*/}
         <Route path="/servicios" element={<Services />} />
+        {/*Cursos display*/}
+        <Route path="/cursos" element={<Cursos />} />
       </Routes>
     </AnimatePresence>
   );

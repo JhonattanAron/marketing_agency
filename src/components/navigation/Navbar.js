@@ -68,19 +68,19 @@ function Navbar() {
                   to="/casos"
                   className="text-lg inline-flex font-medium border-b-2 border-transparent hover:border-blue-500 m-3 transition duration-300 ease-in-out  hover:text-blue-500 "
                 >
-                  Cases
+                  Casos
                 </NavLink>
                 <NavLink
                   to="/servicios"
                   className="text-lg inline-flex font-medium border-b-2 border-transparent hover:border-blue-500 m-3 transition duration-300 ease-in-out  hover:text-blue-500 "
                 >
-                  Services
+                  Servicios
                 </NavLink>
                 <NavLink
                   to="/nosotros"
                   className="text-lg inline-flex font-medium border-b-2 border-transparent hover:border-blue-500 m-3 transition duration-300 ease-in-out  hover:text-blue-500 "
                 >
-                  About Us
+                  Acerca De
                 </NavLink>
                 {/*<NavLink
                   to="/carreras"
@@ -100,7 +100,13 @@ function Navbar() {
                   to="/contacto"
                   className="text-lg inline-flex font-medium border-b-2 border-transparent hover:border-blue-500 m-3 transition duration-300 ease-in-out  hover:text-blue-500 "
                 >
-                  Contact
+                  Contacto
+                </NavLink>
+                <NavLink
+                  to="/cursos"
+                  className="text-lg inline-flex font-medium border-b-2 border-transparent hover:border-blue-500 m-3 transition duration-300 ease-in-out  hover:text-blue-500 "
+                >
+                  Cursos
                 </NavLink>
               </div>
 

@@ -1,25 +1,4 @@
-import React, { useState } from "react";
-import { FormControl, InputLabel, Select, MenuItem } from "@mui/material";
-
 export default function FomrContact() {
-  const [age, setAge] = useState("");
-
-  const handleChange = (event) => {
-    setAge(event.target.value);
-  };
-
-  const Servicios = [
-    "Servicio Web",
-    "Necesito una Pagina Web",
-    "Necesito una Aplicacion Web",
-    "Necesito una Aplicacion de Escritorio",
-    "Necesito una Aplicacion de Mobil",
-    "Necesito Marketing para mi pagina web",
-    "Necesito Servicios de Blockchain",
-    "Necesito Servicios de Inteligencia Artificial",
-    "Quiero implementar IA a mi web",
-  ];
-
   return (
     <form class="flex w-full  mx-auto">
       <div class="w-full max-w-2xl px-5 py-10 m-auto mt-10 bg-white rounded-lg shadow ">
@@ -28,7 +7,7 @@ export default function FomrContact() {
         </div>
         <div class="grid max-w-xl grid-cols-2 gap-4 m-auto">
           <div class="col-span-2 lg:col-span-1">
-            <div class=" relative ">
+            <div class=" relative p-5 ">
               <input
                 type="text"
                 id="contact-form-name"
@@ -36,9 +15,17 @@ export default function FomrContact() {
                 placeholder="Name"
               />
             </div>
+            <div class="relative p-5">
+              <input
+                type="text"
+                id="contact-form-name"
+                class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                placeholder="+593 969849653"
+              />
+            </div>
           </div>
           <div class="col-span-2 lg:col-span-1">
-            <div class=" relative ">
+            <div class=" relative p-5">
               <input
                 type="text"
                 id="contact-form-email"
@@ -48,22 +35,7 @@ export default function FomrContact() {
             </div>
           </div>
           <div class="col-span-2 lg:col-span-1">
-            <div class=" relative ">
-              <FormControl fullWidth variant="filled">
-                <InputLabel id="servicios">Servicios de Desarrollo</InputLabel>
-                <Select
-                  labelId="servicios"
-                  id="demo-simple-select"
-                  value={"Servicio de Desarrollo Web"}
-                  label="Servicios de Desarrollo de Software"
-                  onChange={handleChange}
-                >
-                  {Servicios.map((servicio) => (
-                    <MenuItem value={servicio}>{servicio}</MenuItem>
-                  ))}
-                </Select>
-              </FormControl>
-            </div>
+            <div class=" relative "></div>
           </div>
           <div class="col-span-2">
             <label class="text-gray-700 mt-2" for="name">
