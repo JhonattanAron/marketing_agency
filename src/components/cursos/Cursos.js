@@ -35,8 +35,8 @@ export default function CursosComponent() {
         "https://miro.medium.com/v2/resize:fit:1400/1*CIHazLUXhBCxiho2mE2glQ.png",
       tipo: "Bakend Developer",
       precio: "30.00",
-      fill: "#c9b3b3",
-      bg: "bg-gray-500",
+      fill: "#5bd86f",
+      bg: "bg-green-400",
     },
   ];
   return (

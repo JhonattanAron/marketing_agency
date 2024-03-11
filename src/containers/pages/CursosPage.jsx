@@ -2,9 +2,12 @@ import Footer from "components/navigation/Footer";
 import Navbar from "components/navigation/Navbar";
 import PaginaCursos from "components/cursos/PaginaCursos";
 import Layout from "hocs/layouts/layout";
-import AprenderasCursos from "components/cursos/Aprenderas";
+import { useEffect } from "react";
 
 export default function CursosPage() {
+  useEffect(() => {
+    document.title = "AdaptLeap | Cursos";
+  }, []);
   return (
     <>
       <Navbar />
