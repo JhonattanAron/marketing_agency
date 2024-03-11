@@ -12,15 +12,21 @@ export default function HeaderCursos(params) {
             className={`relative drop-shadow-2xl flex-shrink-0 max-w-xs mx-auto overflow-hidden rounded-lg shadow-lg ${curso.bg}`}
           >
             <CuadrosBg fill={curso.fill} />
-            <div class="relative flex items-center justify-center px-10 pt-10">
-              <div class="absolute bottom-0 left-0 block w-48 h-48 ml-3 -mb-24"></div>
-              <img class="relative w-40" src={curso.portada} alt="shopping" />
+            <div className="relative flex items-center justify-center px-10 pt-10">
+              <div className="absolute bottom-0 left-0 block w-48 h-48 ml-3 -mb-24"></div>
+              <img
+                className="relative w-40"
+                src={curso.portada}
+                alt="shopping"
+              />
             </div>
-            <div class="relative px-6 pb-6 mt-6 text-white">
-              <span class="block opacity-75">{curso.tipo}</span>
-              <div class="flex justify-between">
-                <span class="block text-xl font-semibold">{curso.nombre}</span>
-                <span class="flex items-center px-3 py-2 text-xs font-bold leading-none text-purple-500 bg-white rounded-full">
+            <div className="relative px-6 pb-6 mt-6 text-white">
+              <span className="block opacity-75">{curso.tipo}</span>
+              <div className="flex justify-between">
+                <span className="block text-xl font-semibold">
+                  {curso.nombre}
+                </span>
+                <span className="flex items-center px-3 py-2 text-xs font-bold leading-none text-purple-500 bg-white rounded-full">
                   {curso.precio}$
                 </span>
               </div>

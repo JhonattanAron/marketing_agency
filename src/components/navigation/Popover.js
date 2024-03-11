@@ -38,27 +38,27 @@ const solutions = [
   {
     name: "About",
     href: "/nosotros",
-    icon: <InformationCircleIcon class="h-6 w-6 text-black" />,
+    icon: <InformationCircleIcon className="h-6 w-6 text-black" />,
   },
   /*{
     name: "Carrers",
     href: "/carreras",
-    icon: <TagIcon class="h-6 w-6 text-black" />,
+    icon: <TagIcon className="h-6 w-6 text-black" />,
   },
   {
     name: "Blog",
     href: "/blog",
-    icon: <ChatBubbleOvalLeftEllipsisIcon class="h-6 w-6 text-black" />,
+    icon: <ChatBubbleOvalLeftEllipsisIcon className="h-6 w-6 text-black" />,
   },*/
   {
     name: "Contacto",
     href: "/contacto",
-    icon: <ChatBubbleLeftRightIcon class="h-6 w-6 text-black" />,
+    icon: <ChatBubbleLeftRightIcon className="h-6 w-6 text-black" />,
   },
   {
     name: "Cursos",
     href: "/cursos",
-    icon: <AcademicCapIcon class="h-6 w-6 text-black" />,
+    icon: <AcademicCapIcon className="h-6 w-6 text-black" />,
   },
 ];
 
