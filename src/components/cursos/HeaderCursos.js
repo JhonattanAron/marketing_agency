@@ -5,6 +5,7 @@ export default function HeaderCursos(params) {
 
   return (
     <section className={`py-8  bg-gradient  md:py-16 ${curso.bg}`}>
+      <CuadrosBg fill={curso.fill} />
       <div className="max-w-5xl px-5 mx-auto">
         <div className="flex flex-col justify-between -mx-5 md:flex-row">
           <div
@@ -25,7 +26,7 @@ export default function HeaderCursos(params) {
               </div>
             </div>
           </div>
-          <div className="w-full px-5 md:w-auto">
+          <div className="w-full z-10 px-5 md:w-auto">
             <div className=" my-20">
               <h2 className="text-4xl text-center font-bold tracking-tight text-white">
                 Inicio: <br /> Marzo del 2024

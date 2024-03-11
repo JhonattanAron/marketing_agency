@@ -4,10 +4,10 @@ export default function AprenderasCursos(params) {
   let curso = params.cursoData;
 
   return (
-    <div className={`p-6 px-6 ${curso.bg}`}>
+    <div className={`p-6 px-6 z-10 ${curso.bg}`}>
       <div className="mb-16 text-center">
         <h2 className=" text-2xl font-semibold tracking-wide text-gray-900 uppercase">
-          Que vas a Aprender en este Curso de:
+          Que vas a Aprender con:
         </h2>
         <p className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900  sm:text-4xl">
           {curso.nombre}

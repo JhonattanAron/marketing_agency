@@ -1,7 +1,7 @@
 export default function CuadrosBg(props) {
   return (
     <svg
-      class="absolute bottom-0 left-0 mb-8"
+      class="absolute bottom-0 left-0 mb- -z-1"
       viewBox="0 0 375 283"
       fill="none"
     >
