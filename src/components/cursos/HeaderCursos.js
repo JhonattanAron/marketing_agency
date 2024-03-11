@@ -6,9 +6,9 @@ export default function HeaderCursos(params) {
   return (
     <section className={`py-8  bg-gradient  md:py-16 ${curso.bg}`}>
       <div className="max-w-5xl px-5 mx-auto">
-        <div className="flex justify-between -mx-5 md:flex-row">
+        <div className="flex flex-col justify-between -mx-5 md:flex-row">
           <div
-            className={`relative drop-shadow-2xl flex-shrink-0 max-w-xs m-2 overflow-hidden rounded-lg shadow-lg ${curso.bg}`}
+            className={`relative drop-shadow-2xl flex-shrink-0 max-w-xs mx-auto overflow-hidden rounded-lg shadow-lg ${curso.bg}`}
           >
             <CuadrosBg fill={curso.fill} />
             <div class="relative flex items-center justify-center px-10 pt-10">
