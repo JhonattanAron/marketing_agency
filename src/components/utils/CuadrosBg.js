@@ -25,3 +25,10 @@ export default function CuadrosBg(props) {
     </svg>
   );
 }
+
+export function capitalizarPrimerasLetras(cadena) {
+  return cadena
+    .split(" ")
+    .map((palabra) => palabra.charAt(0).toUpperCase() + palabra.slice(1))
+    .join(" ");
+}

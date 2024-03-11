@@ -1,9 +1,10 @@
 import CuadrosBg from "components/utils/CuadrosBg";
+import { capitalizarPrimerasLetras } from "components/utils/CuadrosBg";
 
 export default function CursosComponent() {
   let data = [
     {
-      nombre: "JavaScript",
+      nombre: "javascript",
       portada:
         "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
       tipo: "Fronted Developer",
@@ -12,7 +13,7 @@ export default function CursosComponent() {
       bg: "bg-yellow-500",
     },
     {
-      nombre: "React",
+      nombre: "react",
       portada: "https://cdn.worldvectorlogo.com/logos/react-1.svg",
       tipo: "Fronted Developer",
       precio: "30.00",
@@ -20,7 +21,7 @@ export default function CursosComponent() {
       bg: "bg-blue-500",
     },
     {
-      nombre: "Angular",
+      nombre: "angular",
       portada:
         "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/240px-Angular_full_color_logo.svg.png",
       tipo: "Fronted Developer",
@@ -29,7 +30,7 @@ export default function CursosComponent() {
       bg: "bg-purple-500",
     },
     {
-      nombre: "Spring Boot",
+      nombre: "spring boot",
       portada:
         "https://miro.medium.com/v2/resize:fit:1400/1*CIHazLUXhBCxiho2mE2glQ.png",
       tipo: "Bakend Developer",
@@ -48,11 +49,10 @@ export default function CursosComponent() {
         Cursos:
       </h2>
       <div class="flex flex-wrap items-center justify-around">
-        {/*Curso*/}
         {data.map((key, index) => {
           let style = `relative flex-shrink-0 max-w-xs m-2 overflow-hidden rounded-lg shadow-lg ${key.bg} `;
           return (
-            <div className={style} key={index}>
+            <a href={`cursos/${key.nombre}`} className={style} key={index}>
               <CuadrosBg fill={key.fill} />
               <div class="relative flex items-center justify-center px-10 pt-10">
                 <div class="absolute bottom-0 left-0 block w-48 h-48 ml-3 -mb-24"></div>
@@ -61,13 +61,15 @@ export default function CursosComponent() {
               <div class="relative px-6 pb-6 mt-6 text-white">
                 <span class="block opacity-75">{key.tipo}</span>
                 <div class="flex justify-between">
-                  <span class="block text-xl font-semibold">{key.nombre}</span>
+                  <span class="block text-xl font-semibold">
+                    {capitalizarPrimerasLetras(key.nombre)}
+                  </span>
                   <span class="flex items-center px-3 py-2 text-xs font-bold leading-none text-purple-500 bg-white rounded-full">
                     {key.precio}$
                   </span>
                 </div>
               </div>
-            </div>
+            </a>
           );
         })}
 
