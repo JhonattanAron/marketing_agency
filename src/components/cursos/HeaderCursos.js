@@ -1,7 +1,25 @@
 import CuadrosBg from "components/utils/CuadrosBg";
+import { useState } from "react";
+import Modal from "@mui/material/Modal";
+import RegistroCurso from "./RegistroCurso";
+
+const style = {
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: 400,
+  bgcolor: "background.paper",
+  border: "2px solid #000",
+  boxShadow: 24,
+  p: 4,
+};
 
 export default function HeaderCursos(params) {
   let curso = params.cursoData;
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
   return (
     <section className={`py-8  bg-gradient  md:py-16 ${curso.bg}`}>
@@ -32,11 +50,19 @@ export default function HeaderCursos(params) {
               </div>
             </div>
           </div>
-          <div className="w-full z-10 px-5 md:w-auto">
-            <div className=" my-20">
+          <div className="w-full z-10 px-5 md:w-auto ">
+            <div className="my-20 flex justify-center align-middle flex-col">
               <h2 className="text-4xl text-center font-bold tracking-tight text-white">
                 Inicio: <br /> Marzo del 2024
               </h2>
+              <button
+                onClick={handleOpen}
+                className={`p-3 bg-black drop-shadow-2xl m-3 rounded-xl cursor-pointer`}
+              >
+                <h2 className="text-4xl text-center font-bold tracking-tight text-white">
+                  Quiero Registrame
+                </h2>
+              </button>
             </div>
             <div className="flex justify-center text-center text-white">
               <div className="w-20 py-3 mx-2 border rounded-lg md:w-24 border-light-300 bg-light-100 md:py-4">
@@ -71,6 +97,16 @@ export default function HeaderCursos(params) {
           </div>
         </div>
       </div>
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <div style={style}>
+          <RegistroCurso curso={curso} />
+        </div>
+      </Modal>
     </section>
   );
 }
