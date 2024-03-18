@@ -8,6 +8,7 @@ import CTA from "components/home/CTA";
 import LogoCloud from "components/home/LogoCloud";
 import BlogList from "components/home/BlogList";
 import Navbar from "components/navigation/Navbar";
+import BotonWhastApp from "components/navigation/BotonWhastApp";
 
 function Home() {
   return (
@@ -25,6 +26,7 @@ function Home() {
         </Layout>
       </div>
       <Footer />
+      <BotonWhastApp />
     </>
   );
 }

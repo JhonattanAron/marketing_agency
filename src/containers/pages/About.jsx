@@ -2,6 +2,7 @@ import Navbar from "components/navigation/Navbar";
 import Layout from "hocs/layouts/layout";
 import Footer from "components/navigation/Footer";
 import Header from "components/About/Header";
+import BotonWhastApp from "components/navigation/BotonWhastApp";
 
 function About() {
   return (
@@ -13,6 +14,8 @@ function About() {
         </div>
       </Layout>
       <Footer />
+      <BotonWhastApp />
+
     </>
   );
 }

@@ -2,6 +2,7 @@ import Navbar from "components/navigation/Navbar";
 import Layout from "hocs/layouts/layout";
 import Footer from "components/navigation/Footer";
 import FomrContact from "components/Contacto/contactoFomr";
+import BotonWhastApp from "components/navigation/BotonWhastApp";
 
 function Contact() {
   return (
@@ -14,6 +15,7 @@ function Contact() {
         </div>
       </Layout>
       <Footer />
+      <BotonWhastApp />
     </>
   );
 }

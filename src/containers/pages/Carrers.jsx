@@ -1,6 +1,7 @@
 import Navbar from "components/navigation/Navbar";
 import Layout from "hocs/layouts/layout";
 import Footer from "components/navigation/Footer";
+import BotonWhastApp from "components/navigation/BotonWhastApp";
 
 function Carrers() {
   return (
@@ -10,6 +11,7 @@ function Carrers() {
         <div className="pt-28">Carrers</div>
       </Layout>
       <Footer />
+      <BotonWhastApp />
     </>
   );
 }

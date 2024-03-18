@@ -3,6 +3,7 @@ import Layout from "hocs/layouts/layout";
 import Footer from "components/navigation/Footer";
 import Header from "components/cases/Header";
 import CasesList from "components/cases/cases_list";
+import BotonWhastApp from "components/navigation/BotonWhastApp";
 
 function Cases() {
   return (
@@ -16,6 +17,7 @@ function Cases() {
         </div>
       </Layout>
       <Footer />
+      <BotonWhastApp />
     </>
   );
 }

@@ -4,6 +4,7 @@ import Footer from "components/navigation/Footer";
 import Header from "components/services/header";
 import WebServices from "components/services/WebServices";
 import BlockChainService from "components/services/BlockChainServices";
+import BotonWhastApp from "components/navigation/BotonWhastApp";
 
 function Services() {
   return (
@@ -18,6 +19,7 @@ function Services() {
         </div>
       </Layout>
       <Footer />
+      <BotonWhastApp />
     </>
   );
 }
