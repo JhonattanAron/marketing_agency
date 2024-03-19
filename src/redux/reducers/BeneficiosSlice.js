@@ -4,7 +4,7 @@ export const fecthBeneficios = createAsyncThunk(
   "cursos/beneficios/fetchCursos",
   async () => {
     try {
-      const response = await fetch("http://127.0.0.1:8081/cursos/beneficios");
+      const response = await fetch("http://127.0.0.1:8080/cursos/beneficios");
       const data = await response.json();
       return data;
     } catch (error) {

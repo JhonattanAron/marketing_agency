@@ -15,7 +15,7 @@ export default function FormContact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://127.0.0.1:8081/send-email", {
+      const response = await fetch("http://127.0.0.1:8080/send-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
