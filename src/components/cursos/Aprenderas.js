@@ -1,3 +1,5 @@
+import { capitalizarPrimerasLetras } from "components/utils/CuadrosBg";
+
 import { AcademicCapIcon } from "@heroicons/react/24/outline";
 export default function AprenderasCursos(params) {
   let curso = params.cursoData;
@@ -13,8 +15,9 @@ export default function AprenderasCursos(params) {
   };
 
   params.beneficiosData.map((key) => {
-    if (curso.id === key.id) {
+    if (curso.id === key.curso_id) {
       beneficios = key;
+      return key;
     }
   });
 
@@ -25,7 +28,7 @@ export default function AprenderasCursos(params) {
           Que vas a Aprender con:
         </h2>
         <p className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900  sm:text-4xl">
-          {curso.nombre}
+          {capitalizarPrimerasLetras(curso.nombre)}
         </p>
       </div>
       <div className="flex flex-wrap my-12 ">

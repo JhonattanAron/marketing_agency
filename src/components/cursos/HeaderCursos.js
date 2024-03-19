@@ -1,4 +1,6 @@
-import CuadrosBg from "components/utils/CuadrosBg";
+import CuadrosBg, {
+  capitalizarPrimerasLetras,
+} from "components/utils/CuadrosBg";
 import { useState } from "react";
 import Modal from "@mui/material/Modal";
 import RegistroCurso from "./RegistroCurso";
@@ -46,7 +48,7 @@ export default function HeaderCursos(params) {
               <span className="block opacity-75">{curso.tipo}</span>
               <div className="flex justify-between">
                 <span className="block text-xl font-semibold">
-                  {curso.nombre}
+                  {capitalizarPrimerasLetras(curso.nombre)}
                 </span>
                 <span className="flex items-center px-3 py-2 text-xs font-bold leading-none text-purple-500 bg-white rounded-full">
                   {curso.precio}$
