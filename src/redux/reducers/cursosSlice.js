@@ -3,7 +3,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
 export const fetchCursos = createAsyncThunk("cursos/fetchCursos", async () => {
   try {
-    const response = await fetch("http://127.0.0.1:8080/cursos");
+    const response = await fetch("http://3.137.160.74:8080/cursos");
     const data = await response.json();
     return data;
   } catch (error) {
