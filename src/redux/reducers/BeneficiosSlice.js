@@ -5,7 +5,7 @@ export const fecthBeneficios = createAsyncThunk(
   async () => {
     try {
       const response = await fetch(
-        "http://3.137.160.74:8080/cursos/beneficios"
+        "https://api.adaptleap.com/cursos/beneficios"
       );
       const data = await response.json();
       return data;
