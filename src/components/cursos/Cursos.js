@@ -36,9 +36,12 @@ export default function CursosComponent() {
       ) : (
         <div className="flex flex-wrap items-center justify-around">
           {cursosRedux.map((key, index) => {
-            let style = `relative flex-shrink-0 max-w-xs m-2 overflow-hidden rounded-lg shadow-lg ${key.bg} `;
             return (
-              <a href={`cursos/${key.nombre}`} className={style} key={index}>
+              <a
+                href={`cursos/${key.nombre}`}
+                className={`relative flex-shrink-0 max-w-xs m-2 overflow-hidden rounded-lg shadow-lg ${key.bg} `}
+                key={index}
+              >
                 <CuadrosBg fill={key.fill} />
                 <div className="relative flex items-center justify-center px-10 pt-10">
                   <div className="absolute bottom-0 left-0 block w-48 h-48 ml-3 -mb-24"></div>
