@@ -5,6 +5,7 @@ import { useState } from "react";
 import Modal from "@mui/material/Modal";
 import RegistroCurso from "./RegistroCurso";
 import { Button } from "@mui/material";
+import CountdownDisplay from "components/utils/CountDownDisplay";
 
 const style = {
   position: "absolute",
@@ -70,36 +71,7 @@ export default function HeaderCursos(params) {
                 </h2>
               </button>
             </div>
-            <div className="flex justify-center text-center text-white">
-              <div className="w-20 py-3 mx-2 border rounded-lg md:w-24 border-light-300 bg-light-100 md:py-4">
-                <div className="text-2xl font-semibold md:text-3xl">
-                  <span>0</span>
-                  <span>1</span>
-                </div>
-                <div className="mt-3 text-xs uppercase opacity-75">Day</div>
-              </div>
-              <div className="w-20 py-3 mx-2 border rounded-lg md:w-24 border-light-300 bg-light-100 md:py-4">
-                <div className="text-2xl font-semibold md:text-3xl">
-                  <span>1</span>
-                  <span>8</span>
-                </div>
-                <div className="mt-3 text-xs uppercase opacity-75 ">Hour</div>
-              </div>
-              <div className="w-20 py-3 mx-2 border rounded-lg md:w-24 border-light-300 bg-light-100 md:py-4">
-                <div className="text-2xl font-semibold md:text-3xl">
-                  <span>5</span>
-                  <span>0</span>
-                </div>
-                <div className="mt-3 text-xs uppercase opacity-75 ">Min</div>
-              </div>
-              <div className="w-20 py-3 mx-2 border rounded-lg md:w-24 border-light-300 bg-light-100 md:py-4">
-                <div className="text-2xl font-semibold md:text-3xl">
-                  <span>1</span>
-                  <span>9</span>
-                </div>
-                <div className="mt-3 text-xs uppercase opacity-75 ">Second</div>
-              </div>
-            </div>
+            <CountdownDisplay deadline="2024-04-01T23:59:59" />
           </div>
         </div>
       </div>
