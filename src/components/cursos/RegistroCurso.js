@@ -37,9 +37,6 @@ export default function RegistroCurso(params) {
       );
       if (response.ok) {
         setRegistroEnviado(true);
-        alert(
-          `El estudiante ${estudianteData.nombre} ha sido registrado con éxito`
-        );
       } else {
         throw new Error("Error al registrar Estudiante");
       }
@@ -59,7 +56,9 @@ export default function RegistroCurso(params) {
           <Typography variant="body1">Enviando registro...</Typography>
         </div>
       ) : registroEnviado ? (
-        <h1>Registro Enviado con Éxito</h1>
+        <h1>
+          El estudiante {estudianteData.nombre} ha sido registrado con éxito
+        </h1>
       ) : (
         <>
           <div className="self-center mb-2 text-xl font-light text-gray-800 sm:text-2xl text-center">
