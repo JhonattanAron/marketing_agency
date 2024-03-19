@@ -30,7 +30,8 @@ export default function HeaderCursos(params) {
       <div className="max-w-5xl px-5 mx-auto">
         <div className="flex flex-col justify-between -mx-5 md:flex-row">
           <div
-            className={`relative drop-shadow-2xl flex-shrink-0 max-w-xs mx-auto overflow-hidden rounded-lg shadow-lg ${curso.bg}`}
+            style={{ backgroundColor: curso.bg }}
+            className={`relative drop-shadow-2xl flex-shrink-0 max-w-xs mx-auto overflow-hidden rounded-lg shadow-lg`}
           >
             <CuadrosBg fill={curso.fill} />
             <div className="relative flex items-center justify-center px-10 pt-10">
