@@ -19,7 +19,7 @@ export default function AprenderasCursos(params) {
   });
 
   return (
-    <div className={`p-6 px-6 z ${curso.bg}`}>
+    <div style={{ backgroundColor: curso.bg }} className={`p-6 px-6 z`}>
       <div className="mb-16 text-center">
         <h2 className=" text-2xl z-10 font-semibold tracking-wide text-gray-900 uppercase">
           Que vas a Aprender con:

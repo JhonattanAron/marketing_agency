@@ -22,7 +22,10 @@ export default function HeaderCursos(params) {
   const handleClose = () => setOpen(false);
 
   return (
-    <section className={`py-8  bg-gradient  md:py-16 ${curso.bg}`}>
+    <section
+      style={{ backgroundColor: curso.bg }}
+      className={`py-8  bg-gradient  md:py-16 `}
+    >
       <CuadrosBg fill={curso.fill} />
       <div className="max-w-5xl px-5 mx-auto">
         <div className="flex flex-col justify-between -mx-5 md:flex-row">
