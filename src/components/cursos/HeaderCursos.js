@@ -60,7 +60,7 @@ export default function HeaderCursos(params) {
           <div className="w-full z-10 px-5 md:w-auto ">
             <div className="my-20 flex justify-center align-middle flex-col">
               <h2 className="text-4xl text-center font-bold tracking-tight text-white">
-                Inicio: <br /> Marzo del 2024
+                Inicio: <br /> Abril del 2024
               </h2>
               <button
                 onClick={handleOpen}
