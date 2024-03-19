@@ -39,7 +39,8 @@ export default function CursosComponent() {
             return (
               <a
                 href={`cursos/${key.nombre}`}
-                className={`relative flex-shrink-0 max-w-xs m-2 overflow-hidden rounded-lg shadow-lg ${key.bg} `}
+                style={{ backgroundColor: key.bg }}
+                className={`relative flex-shrink-0 max-w-xs m-2 overflow-hidden rounded-lg shadow-lg`}
                 key={index}
               >
                 <CuadrosBg fill={key.fill} />
