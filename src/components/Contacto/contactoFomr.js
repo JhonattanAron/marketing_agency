@@ -1,6 +1,41 @@
-export default function FomrContact() {
+import { useState } from "react";
+
+export default function FormContact() {
+  const [emailData, setEmailData] = useState({
+    nombre: "",
+    email: "",
+    numero: "",
+    body: "",
+  });
+
+  const handleChange = (e) => {
+    setEmailData({ ...emailData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch("http://127.0.0.1:8081/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(emailData),
+      });
+
+      if (response.ok) {
+        alert("Correo enviado correctamente");
+      } else {
+        throw new Error("Error al enviar el correo");
+      }
+    } catch (error) {
+      console.error("Error al enviar el correo:", error);
+      alert("Error al enviar el correo");
+    }
+  };
+
   return (
-    <form className="flex w-full  mx-auto">
+    <form onSubmit={handleSubmit} className="flex w-full  mx-auto">
       <div className="w-full max-w-2xl px-5 py-10 m-auto mt-10 bg-white rounded-lg shadow ">
         <div className="mb-6 text-3xl font-light text-center text-gray-800 ">
           Ponte en Contacto con Nosotros
@@ -10,6 +45,9 @@ export default function FomrContact() {
             <div className=" relative p-5 ">
               <input
                 type="text"
+                value={emailData.nombre}
+                name="nombre"
+                onChange={handleChange}
                 id="contact-form-name"
                 className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
                 placeholder="Name"
@@ -18,6 +56,9 @@ export default function FomrContact() {
             <div className="relative p-5">
               <input
                 type="text"
+                value={emailData.numero}
+                name="numero"
+                onChange={handleChange}
                 id="contact-form-name"
                 className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
                 placeholder="+593 969849653"
@@ -28,6 +69,9 @@ export default function FomrContact() {
             <div className=" relative p-5">
               <input
                 type="text"
+                value={emailData.email}
+                name="email"
+                onChange={handleChange}
                 id="contact-form-email"
                 className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
                 placeholder="email"
@@ -42,8 +86,10 @@ export default function FomrContact() {
               <textarea
                 className="flex-1 w-full px-4 py-2 text-base text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
                 id="comment"
+                value={emailData.body}
+                onChange={handleChange}
                 placeholder="Enter your comment"
-                name="comment"
+                name="body"
                 rows="5"
                 cols="40"
               ></textarea>

@@ -2,6 +2,7 @@ import CuadrosBg from "components/utils/CuadrosBg";
 import { useState } from "react";
 import Modal from "@mui/material/Modal";
 import RegistroCurso from "./RegistroCurso";
+import { Button } from "@mui/material";
 
 const style = {
   position: "absolute",
@@ -10,7 +11,6 @@ const style = {
   transform: "translate(-50%, -50%)",
   width: 400,
   bgcolor: "background.paper",
-  border: "2px solid #000",
   boxShadow: 24,
   p: 4,
 };
@@ -104,6 +104,12 @@ export default function HeaderCursos(params) {
         aria-describedby="modal-modal-description"
       >
         <div style={style}>
+          <div className="my-3">
+            <Button onClick={handleClose} variant="contained" color="error">
+              X
+            </Button>
+          </div>
+
           <RegistroCurso curso={curso} />
         </div>
       </Modal>

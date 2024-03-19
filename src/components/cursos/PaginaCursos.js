@@ -1,59 +1,61 @@
 import { useParams } from "react-router-dom";
 import HeaderCursos from "./HeaderCursos";
 import AprenderasCursos from "./Aprenderas";
+import { useDispatch, useSelector } from "react-redux";
+import { useEffect } from "react";
+import { fetchCursos } from "redux/reducers/cursosSlice";
+import CargandoPagina from "components/loading/CargandoPagina";
+import { fecthBeneficios } from "redux/reducers/BeneficiosSlice";
 
 export default function PaginaCursos() {
-  let data = [
-    {
-      nombre: "JavaScript",
-      portada:
-        "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
-      tipo: "Fronted Developer",
-      precio: "25.00",
-      fill: "#f3c06b",
-      bg: "bg-yellow-500",
-    },
-    {
-      nombre: "React",
-      portada: "https://cdn.worldvectorlogo.com/logos/react-1.svg",
-      tipo: "Fronted Developer",
-      precio: "30.00",
-      fill: "#669ae8",
-      bg: "bg-blue-500",
-    },
-    {
-      nombre: "Angular",
-      portada:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/240px-Angular_full_color_logo.svg.png",
-      tipo: "Fronted Developer",
-      precio: "30.00",
-      fill: "#cb66e8",
-      bg: "bg-purple-500",
-    },
-    {
-      nombre: "Spring Boot",
-      portada:
-        "https://miro.medium.com/v2/resize:fit:1400/1*CIHazLUXhBCxiho2mE2glQ.png",
-      tipo: "Bakend Developer",
-      precio: "30.00",
-      fill: "#5bd86f",
-      bg: "bg-green-400",
-    },
-  ];
-
   let { cursoParam } = useParams();
-  let cursoEncontrado = null;
+  const cursosRedux = useSelector((state) => state.cursos.cursos);
+  const cursosLoading = useSelector((state) => state.cursos.loading);
+  const cursosError = useSelector((state) => state.cursos.error);
+  const dispatch = useDispatch();
 
-  data.forEach((cursoData) => {
-    if (cursoParam.toLowerCase() === cursoData.nombre.toLowerCase()) {
-      cursoEncontrado = cursoData;
-    }
-  });
+  const beneficios = useSelector(
+    (state) => state.cursosBeneficios.beneficios_cursos
+  );
+  const beneficiosLoading = useSelector(
+    (state) => state.cursosBeneficios.loading
+  );
+  const beneficiosError = useSelector((state) => state.cursosBeneficios.error);
+
+  useEffect(() => {
+    dispatch(fetchCursos());
+    dispatch(fecthBeneficios());
+  }, [dispatch]);
+
+  if (cursosError) {
+    return (
+      <CargandoPagina title={`Error al cargar El Curso: ${cursosError}`} />
+    );
+  }
+
+  if (cursosLoading || beneficiosLoading) {
+    return <CargandoPagina title="Tu Pagina Se Esta Cargando" />;
+  }
+
+  const cursoEncontrado = cursosRedux.find(
+    (cursoData) => cursoParam.toLowerCase() === cursoData.nombre.toLowerCase()
+  );
+
+  if (!cursoEncontrado) {
+    return <CargandoPagina title="El curso No Fue Encontrado" />;
+  }
 
   return (
     <div>
-      <HeaderCursos cursoData={cursoEncontrado} />
-      <AprenderasCursos cursoData={cursoEncontrado} />
+      <div className="">
+        <HeaderCursos cursoData={cursoEncontrado} />
+      </div>
+      <div className="relative">
+        <AprenderasCursos
+          cursoData={cursoEncontrado}
+          beneficiosData={beneficios}
+        />
+      </div>
     </div>
   );
 }

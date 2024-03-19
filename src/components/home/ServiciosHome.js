@@ -59,15 +59,15 @@ export default function ServicesHome() {
           incluye:
         </h2>
       </div>
-      <div class="flex-wrap items-center justify-center gap-8  sm:flex">
-        <div class="drop-shadow-2xl w-full px-4 py-4 mt-6 bg-white rounded-lg shadow-lg sm:w-1/2 md:w-1/2 lg:w-1/4">
-          <div class="flex-shrink-0">
-            <div class="flex items-center justify-center w-12 h-12 mx-auto text-white bg-indigo-500 rounded-md">
+      <div className="flex-wrap items-center justify-center gap-8  sm:flex">
+        <div className="drop-shadow-2xl w-full px-4 py-4 mt-6 bg-white rounded-lg shadow-lg sm:w-1/2 md:w-1/2 lg:w-1/4">
+          <div className="flex-shrink-0">
+            <div className="flex items-center justify-center w-12 h-12 mx-auto text-white bg-indigo-500 rounded-md">
               <svg
                 width="20"
                 height="20"
                 fill="currentColor"
-                class="w-6 h-6"
+                className="w-6 h-6"
                 viewBox="0 0 1792 1792"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -76,21 +76,21 @@ export default function ServicesHome() {
             </div>
           </div>
           <h3
-            class="py-4 text-center
+            className="py-4 text-center
            text-2xl font-semibold text-gray-700 sm:text-xl"
           >
             Servicios de Desarrollo Web
           </h3>
           <ServiceListBen data={beneficiosWeb} />
         </div>
-        <div class="drop-shadow-2xl w-full px-4 py-4 mt-6 bg-white rounded-lg shadow-lg sm:w-1/2 md:w-1/2 lg:w-1/4 sm:mt-16 md:mt-20 lg:mt-24 ">
-          <div class="flex-shrink-0">
-            <div class="flex items-center justify-center w-12 h-12 mx-auto text-white bg-indigo-500 rounded-md">
+        <div className="drop-shadow-2xl w-full px-4 py-4 mt-6 bg-white rounded-lg shadow-lg sm:w-1/2 md:w-1/2 lg:w-1/4 sm:mt-16 md:mt-20 lg:mt-24 ">
+          <div className="flex-shrink-0">
+            <div className="flex items-center justify-center w-12 h-12 mx-auto text-white bg-indigo-500 rounded-md">
               <svg
                 width="20"
                 height="20"
                 fill="currentColor"
-                class="w-6 h-6"
+                className="w-6 h-6"
                 viewBox="0 0 1792 1792"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -98,19 +98,19 @@ export default function ServicesHome() {
               </svg>
             </div>
           </div>
-          <h3 class="py-4 text-2xl font-semibold text-gray-700 sm:text-xl ">
+          <h3 className="py-4 text-2xl font-semibold text-gray-700 sm:text-xl ">
             Servicios de Desarrollo Mobile
           </h3>
           <ServiceListBen data={beneficiosMobile} />
         </div>
-        <div class="drop-shadow-2xl w-full px-4 py-4 mt-6 bg-white rounded-lg shadow-lg sm:w-1/2 md:w-1/2 lg:w-1/4 ">
-          <div class="flex-shrink-0">
-            <div class="flex items-center justify-center w-12 h-12 mx-auto text-white bg-indigo-500 rounded-md">
+        <div className="drop-shadow-2xl w-full px-4 py-4 mt-6 bg-white rounded-lg shadow-lg sm:w-1/2 md:w-1/2 lg:w-1/4 ">
+          <div className="flex-shrink-0">
+            <div className="flex items-center justify-center w-12 h-12 mx-auto text-white bg-indigo-500 rounded-md">
               <svg
                 width="20"
                 height="20"
                 fill="currentColor"
-                class="w-6 h-6"
+                className="w-6 h-6"
                 viewBox="0 0 1792 1792"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -118,7 +118,7 @@ export default function ServicesHome() {
               </svg>
             </div>
           </div>
-          <h3 class="py-4 text-2xl font-semibold text-gray-700 sm:text-xl ">
+          <h3 className="py-4 text-2xl font-semibold text-gray-700 sm:text-xl ">
             Servicios al Desarrollo Blockchain
           </h3>
           <ServiceListBen data={beneficiosBlockchain} />

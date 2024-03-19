@@ -1,4 +1,5 @@
 import ServiciosHome from "components/home/ServiciosHome";
+import BoxLoading from "components/loading/boxLoading";
 
 const incentivos = [
   {

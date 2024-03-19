@@ -1,4 +1,3 @@
-import { connect } from "react-redux";
 import { motion } from "framer-motion";
 function Layout({ children }) {
   return (
@@ -12,6 +11,4 @@ function Layout({ children }) {
   );
 }
 
-const mapStateToProps = (state) => {};
-
-export default connect(mapStateToProps, {})(Layout);
+export default Layout;

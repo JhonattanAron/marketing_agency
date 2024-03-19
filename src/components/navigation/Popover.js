@@ -23,7 +23,7 @@ const solutions = [
   {
     name: "Home",
     href: "/",
-    icon: <HomeIcon class="h-6 w-6 text-black" />,
+    icon: <HomeIcon className="h-6 w-6 text-black" />,
   },
   {
     name: "Cases",
@@ -73,11 +73,11 @@ export default function PopoverNav() {
             <Popover.Button>
               {iconMenu ? (
                 <span onClick={() => setIconMenu(false)}>
-                  <XMarkIcon class="h-10 w-10" />
+                  <XMarkIcon className="h-10 w-10" />
                 </span>
               ) : (
                 <span onClick={() => setIconMenu(true)}>
-                  <Bars3Icon class="h-10 w-10" />
+                  <Bars3Icon className="h-10 w-10" />
                 </span>
               )}
             </Popover.Button>
@@ -122,19 +122,14 @@ export default function PopoverNav() {
                         <Typography>Support</Typography>
                       </AccordionSummary>
                       <AccordionDetails>
-                        <a
-                          href="/reportar"
-                          className="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500/50"
-                        >
+                        <div className="flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500/50">
                           <ExclamationTriangleIcon className="h-6 w-6 text-gray-500" />
-
-                          <div className="flex h-10 w-10 shrink-0 items-center justify-center text-white sm:h-12 sm:w-12"></div>
                           <div className="ml-4">
                             <p className="text-sm font-medium text-gray-900">
                               Reportar un Error
                             </p>
                           </div>
-                        </a>
+                        </div>
                       </AccordionDetails>
                     </Accordion>
                   </div>
