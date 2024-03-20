@@ -70,8 +70,7 @@ export default function BlogList() {
             Nuestros Clientes Actualmente
           </h2>
           <p className="mt-3 text-xl text-gray-500 sm:mt-4">
-            Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat
-            massa dictumst amet. Sapien tortor lacus arcu.
+            Ellos COnfian en nosotros y Nosotros Confiamos en ellos
           </p>
         </div>
         <div className="mt-12 grid gap-16 pt-12 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12">
