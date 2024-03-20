@@ -111,19 +111,19 @@ function Navbar() {
               </div>
 
               <div className="hidden mx-auto xl:flex space-x-5 ml-auto items-center">
-                <button
+                <a
+                  href="https://learning.adaptleap.com/"
                   type="button"
                   className="ml-12 relative inline-flex items-center rounded-md border border-transparent bg-indigo-600 px-5 py-3 text-md font-medium text-white shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 hover:bg-blue-dark duration-300"
                 >
                   Plataforma elearning
                   <DotLoader
-                    href="elearning.adaptleap.com"
                     className="ml-3"
                     loading={loading}
                     size={25}
                     color="#ffffff"
                   />
-                </button>
+                </a>
               </div>
             </div>
 
