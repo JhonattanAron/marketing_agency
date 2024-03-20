@@ -6,7 +6,8 @@ const cases = [
     imageUrl:
       "https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     twitterUrl: "#",
-    linkedinUrl: "#",
+    linkedinUrl:
+      "https://github.com/nobeeakon/manifestaciones_impacto_ambiental",
   },
   {
     name: "Data Analytics Solutions",
@@ -14,7 +15,7 @@ const cases = [
     imageUrl:
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     twitterUrl: "#",
-    linkedinUrl: "#",
+    linkedinUrl: "https://github.com/francomanca93/analisis-de-datos",
   },
   {
     name: "EcoTech Innovations",
@@ -22,7 +23,8 @@ const cases = [
     imageUrl:
       "https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     twitterUrl: "#",
-    linkedinUrl: "#",
+    linkedinUrl:
+      "https://github.com/nobeeakon/manifestaciones_impacto_ambiental",
   },
   {
     name: "Healthcare Solutions",
@@ -30,7 +32,7 @@ const cases = [
     imageUrl:
       "https://images.unsplash.com/photo-1543333995-a78aea2eee50?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     twitterUrl: "#",
-    linkedinUrl: "#",
+    linkedinUrl: "https://github.com/Yuberley/MedicalSoft",
   },
   {
     name: "FutureTech Ventures",
@@ -38,7 +40,8 @@ const cases = [
     imageUrl:
       "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
     twitterUrl: "#",
-    linkedinUrl: "#",
+    linkedinUrl:
+      "https://github.com/collectivecloudperu/aplicacion_reactvr_360_grados",
   },
   {
     name: "Approaches in web 3.0",
@@ -46,7 +49,7 @@ const cases = [
     imageUrl:
       "https://images.unsplash.com/photo-1605792657660-596af9009e82?q=80&w=2002&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     twitterUrl: "#",
-    linkedinUrl: "#",
+    linkedinUrl: "https://github.com/esci-blockchain/esci",
   },
   // More cases...
 ];

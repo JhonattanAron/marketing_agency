@@ -115,8 +115,9 @@ function Navbar() {
                   type="button"
                   className="ml-12 relative inline-flex items-center rounded-md border border-transparent bg-indigo-600 px-5 py-3 text-md font-medium text-white shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 hover:bg-blue-dark duration-300"
                 >
-                  Create new job
+                  Plataforma elearning
                   <DotLoader
+                    href="elearning.adaptleap.com"
                     className="ml-3"
                     loading={loading}
                     size={25}
