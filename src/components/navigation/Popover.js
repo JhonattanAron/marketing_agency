@@ -26,17 +26,17 @@ const solutions = [
     icon: <HomeIcon className="h-6 w-6 text-black" />,
   },
   {
-    name: "Cases",
+    name: "Casos",
     href: "/casos",
     icon: <BookOpenIcon className="h-6 w-6 text-gray-500" />,
   },
   {
-    name: "Servives",
+    name: "Servicios",
     href: "/servicios",
     icon: <WindowIcon className="h-6 w-6 text-gray-500" />,
   },
   {
-    name: "About",
+    name: "Nosotros",
     href: "/nosotros",
     icon: <InformationCircleIcon className="h-6 w-6 text-black" />,
   },

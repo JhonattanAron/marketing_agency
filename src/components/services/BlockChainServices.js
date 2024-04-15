@@ -1,11 +1,11 @@
-export default function BlockChainService() {
+export default function BlockChainService(props) {
   return (
     <div className="relative max-w-screen-xl p-4 px-4 mx-auto bg-white  sm:px-6 lg:px-8 py-26 lg:mt-20">
       <div className="relative">
         <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
           <div className="ml-auto lg:col-start-2 lg:max-w-2xl">
             <p className="text-base font-semibold leading-6 text-indigo-500 uppercase">
-              BlockChain
+              {props.data.tittle}
             </p>
             <h4 className="mt-2 text-2xl font-extrabold leading-8 text-gray-900  sm:text-3xl sm:leading-9">
               Servicios Enfocados a la BlockChain

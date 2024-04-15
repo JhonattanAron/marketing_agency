@@ -7,15 +7,18 @@ import BlockChainService from "components/services/BlockChainServices";
 import BotonWhastApp from "components/navigation/BotonWhastApp";
 
 function Services() {
+  blockchain = {
+    tittle: "BlockChain",
+  };
+
   return (
     <>
       <Navbar />
       <Layout>
         <div className="pt-28">
           <Header />
-          <WebServices/>
-          <WebServices position="ml-auto"/>
-          <BlockChainService />
+          <WebServices position="ml-auto" />
+          <BlockChainService data={blockchain} />
         </div>
       </Layout>
       <Footer />
