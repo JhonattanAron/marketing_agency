@@ -8,15 +8,10 @@ export default function BlockChainService(props) {
               {props.data.tittle}
             </p>
             <h4 className="mt-2 text-2xl font-extrabold leading-8 text-gray-900  sm:text-3xl sm:leading-9">
-              Servicios Enfocados a la BlockChain
+              {props.data.subtittle}
             </h4>
             <p className="mt-4 text-lg leading-6 text-gray-500 ">
-              En AdaptLeap, nos especializamos en ofrecer una amplia gama de
-              servicios centrados en la tecnología blockchain. Ya sea que
-              busques mejorar tu aplicación actual, desarrollar una nueva
-              aplicación, implementar contratos inteligentes u otras soluciones,
-              estamos aquí para brindarte asesoramiento y soporte especializado
-              en el emocionante mundo de la blockchain.
+              {props.data.description}
             </p>
             <ul className="gap-6 mt-8 md:grid md:grid-cols-2">
               <li className="mt-6 lg:mt-0">
@@ -35,7 +30,7 @@ export default function BlockChainService(props) {
                     </svg>
                   </span>
                   <span className="ml-4 text-base font-medium leading-6 text-gray-500">
-                    Desarrollo de Aplicaciones Descentralizadas (DApps)
+                    {props.data.beneficios[0]}
                   </span>
                 </div>
               </li>
@@ -55,7 +50,7 @@ export default function BlockChainService(props) {
                     </svg>
                   </span>
                   <span className="ml-4 text-base font-medium leading-6 text-gray-500 ">
-                    Implementación de Contratos Inteligentes
+                    {props.data.beneficios[1]}
                   </span>
                 </div>
               </li>
@@ -75,7 +70,7 @@ export default function BlockChainService(props) {
                     </svg>
                   </span>
                   <span className="ml-4 text-base font-medium leading-6 text-gray-500 ">
-                    Consultoría en Blockchain
+                    {props.data.beneficios[2]}
                   </span>
                 </div>
               </li>
@@ -95,7 +90,7 @@ export default function BlockChainService(props) {
                     </svg>
                   </span>
                   <span className="ml-4 text-base font-medium leading-6 text-gray-500 ">
-                    Auditoría de Seguridad Blockchain
+                    {props.data.beneficios[3]}
                   </span>
                 </div>
               </li>
@@ -107,13 +102,13 @@ export default function BlockChainService(props) {
                 <img
                   className="w-32 rounded-lg shadow-lg md:w-56"
                   width="200"
-                  src="https://images.unsplash.com/photo-1640340434855-6084b1f4901c?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src={props.data.imagenes[0]}
                   alt="1"
                 />
                 <img
                   className="w-40 rounded-lg shadow-lg md:w-64"
                   width="260"
-                  src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src={props.data.imagenes[1]}
                   alt="2"
                 />
               </div>
@@ -121,13 +116,13 @@ export default function BlockChainService(props) {
                 <img
                   className="w-24 rounded-lg shadow-lg md:w-40"
                   width="170"
-                  src="https://images.unsplash.com/photo-1605792657660-596af9009e82?q=80&w=2002&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src={props.data.imagenes[2]}
                   alt="3"
                 />
                 <img
                   className="w-32 rounded-lg shadow-lg md:w-56"
                   width="200"
-                  src="https://images.unsplash.com/photo-1642751227050-feb02d648136?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src={props.data.imagenes[3]}
                   alt="4"
                 />
               </div>
