@@ -19,16 +19,6 @@ function Header(props) {
                 clients. Let's build together the path to business triumph
               </p>
             </div>
-            <div
-              style={{ top: "-2rem" }}
-              className="absolute inset-x-0 -z-10 transform-gpu overflow-hidden  sm:top-[calc(100%-30rem)]"
-            >
-              <img
-                className="h-full w-screen overflow-hidden blur-md object-cover  "
-                src="https://i.ibb.co/nbGtytn/programmer-with-8eca7631-5f4a-4156-ad12-7c8e9def1e99.png"
-                alt="fondo"
-              ></img>
-            </div>
           </div>
         </div>
       </div>
