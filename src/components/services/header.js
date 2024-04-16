@@ -14,9 +14,10 @@ function Header(props) {
                 </span>
               </h1>
               <p className="text-2xl mt-10 mr-auto w-full xl:w-2/4 rounded-2xl p-4 bg-white-transparent  leading-8 text-gray-900 font-bold ">
-                We transform challenges into solutions. Find out how Our
-                experience and dedication have driven the success of our
-                clients. Let's build together the path to business triumph
+                Transformamos desafíos en soluciones. Descubra cómo Nuestro La
+                experiencia y la dedicación han impulsado el éxito de nuestra
+                clientela. Construyamos juntos el camino hacia el triunfo
+                empresarial
               </p>
             </div>
           </div>
